@@ -1,2 +1,2 @@
-# Y3-Project
-Detecting social manipulation online using Machine Learning and Text Classification
+# Athena
+Detecting coercive control online via a Machine Learning algorithm
