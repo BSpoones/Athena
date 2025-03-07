@@ -2,9 +2,7 @@
 
 ## Blame
 ## Comparative Justification
-## Contradiction
 ## Denial
-## Denial of harm
 ## Downplaying
 ## Emotional Connection
 ## Emotional leverage
