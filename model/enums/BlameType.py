@@ -1,9 +1,10 @@
 from model.lib.util.enums.ElementTypeEnum import ElementType
 
 class BlameType(ElementType):
-    DIRECT = 1
-    JUSTIFIED = 2
-    REVERSE = 3
+    PERSONAL = 1
+    CIRCUMSTANCE = 2
+    REACTIVE = 3
+    COMPARATIVE = 4
 
     @property
     def raw_file(self) -> str:
