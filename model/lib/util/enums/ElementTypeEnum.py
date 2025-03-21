@@ -4,7 +4,14 @@ from EnumMeta import _EnumMeta
 
 
 class ElementType(ABC, IntEnum, metaclass=_EnumMeta):
-    
+    """
+    DOCSTRING GO HERE
+
+    """
+
+    # TODO -> Add explanation
+    NONE = 0
+
     @staticmethod
     def from_ordinal(ordinal: int):
         """Returns the enum member corresponding to the given ordinal."""
