@@ -3,6 +3,7 @@ from dataclasses import dataclass
 from openai import AsyncOpenAI
 from openai.types.beta import Thread
 
+__all__ = ["ThreadPool"]
 
 @dataclass
 class ThreadPool:
