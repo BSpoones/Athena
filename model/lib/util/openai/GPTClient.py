@@ -230,9 +230,8 @@ class GPTClient:
             return None
 
     async def _log_failed_batch(self, run_id: str, batch: str, reason: str, raw_response: str | None):
-
         self.failed += 1
-        self.logger.debug(
+        self.logger.error(
             f"Preparing to log failed batch request"
             f"\n\tID: {run_id}\n\tBatch: {batch}"
             f"\n\tReason: {reason}\n\tRaw Response`: {raw_response}"
