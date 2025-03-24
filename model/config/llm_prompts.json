@@ -1,0 +1,9 @@
+{
+  "model": "gpt-4o-mini",
+  "json-precursor": "For all responses in this conversation, return the output **strictly as a JSON array of strings**, with no explanations or extra text",
+  "paraphrasing-precursor": "For all sentences (split by a new line) in this conversation, generate up to 5 augmented (paraphrased) versions of each sentence while keeping the original meaning\nIf you are unable to generate 5 augmented versions, please return a minimum of 3",
+  "pronoun-swap-precursor": "Generate versions of each sentence with relevant pronouns swapped" ,
+  "tense-shift-precursor": "Generate versions of each sentence to change the tense. Each example should be changed to cover past, present, future, and perfect tense. Where this is not appropriate, do as many tenses as you can",
+  "convo-filter-precursor": "Generate at least 3 variations of each sentence, adding conversational fillers and emphasis wording to add additional meaning to each sentence",
+  "definiteness-changes-precursor": "Generate at least 3 versions of each sentence with changes to the definiteness of the sentence. This can include changing the certainty levels."
+}
