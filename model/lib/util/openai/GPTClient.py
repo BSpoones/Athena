@@ -124,25 +124,27 @@ class GPTClient:
         if self._assistant is None:
             raise RuntimeError("Assistant not initialised!")
 
-        prompt = "\n".join(batch)
+        prompt: str = "\n".join(batch)
+        thread_pool: ThreadPool = await self._get_available_thread()
+        run_created_at = None
 
         try:
-            thread_pool = await self._get_available_thread()
-            thread = thread_pool.thread
+            thread: Thread = thread_pool.thread
             await self._create_message(thread, prompt)
-            run = await self._create_run(thread)
-        except Exception as e:
-            self.logger.critical(f"FAILED TO START RUN DUE TO {e}")
-            return None
+            run: Run = await self._create_run(thread)
+            run_created_at = run.created_at
 
-        try:
-            response = await self._retrieve_run(thread, run, prompt)
+            response: dict[str, list[str]] = await self._retrieve_run(thread, run, prompt)
             if response:
                 self.completed += 1
             return response
+        except Exception as e:
+            self.logger.critical(f"FAILED TO START RUN DUE TO {e}")
+            return None
         finally:
             thread_pool.completion_count += 1
-            thread_pool.previous_created_at = run.created_at
+            if run_created_at is not None:
+                thread_pool.previous_created_at = run_created_at
             await self._release_thread(thread_pool)
 
     async def _create_message(self, thread: Thread, message: str) -> Message:
