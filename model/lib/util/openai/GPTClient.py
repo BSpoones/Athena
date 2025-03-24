@@ -244,12 +244,14 @@ class GPTClient:
         }
 
         try:
-            async with aiofiles.open(_ERROR_PATH, mode="r+", encoding="utf-8") as f:
-                content = await f.read()
-                data = json.loads(content) if content.strip() else {}
-                data[run_id] = log
-                await f.seek(0)
-                await f.write(json.dumps(data, indent=4))
-                await f.truncate()
+            async with aiofiles.open(_ERROR_PATH, mode="a+", encoding="utf-8") as f:
+                with asyncio.locks.Lock():
+                    await f.seek(0)
+                    content = await f.read()
+                    data = json.loads(content) if content.strip() else {}
+                    data[run_id] = log
+                    await f.seek(0)
+                    await f.write(json.dumps(data, indent=4))
+                    await f.truncate()
         except Exception as e:
-            self.logger.error(f"Failed to log failed batch ({raw_response} due to:\n{e}")
+            self.logger.error(f"Failed to log failed batch {raw_response} due to:\n{e}")
