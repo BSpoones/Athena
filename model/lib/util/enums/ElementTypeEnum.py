@@ -1,9 +1,10 @@
 from enum import IntEnum
-from abc import ABC, abstractmethod
-from EnumMeta import _EnumMeta
+from abc import ABC
+from .EnumMeta import MyEnumMeta
+from data import RAW_FILES
 
 
-class ElementType(ABC, IntEnum, metaclass=_EnumMeta):
+class ElementType(ABC, IntEnum, metaclass=MyEnumMeta):
     """
     DOCSTRING GO HERE
 
@@ -42,24 +43,19 @@ class ElementType(ABC, IntEnum, metaclass=_EnumMeta):
         
         return min(map(lambda x: x.ordinal(), members))
 
-    @property
-    @abstractmethod
-    def raw_file(self) -> str:
+    @classmethod
+    def raw_file(cls) -> str:
+        return RAW_FILES[cls.__name__]
+
+    @classmethod
+    def paraphrased_file(cls) -> str:
+        raise NotImplementedError
+    @classmethod
+    def normalised_file(cls) -> str:
         raise NotImplementedError
 
-    @property
-    @abstractmethod
-    def paraphrased_file(self) -> str:
-        raise NotImplementedError
-
-    @property
-    @abstractmethod
-    def normalised_file(self) -> str:
-        raise NotImplementedError
-
-    @property
-    @abstractmethod
-    def classified_file(self) -> str:
+    @classmethod
+    def classified_file(cls) -> str:
         raise NotImplementedError
 
 
