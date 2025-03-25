@@ -1,22 +1,13 @@
 import asyncio
-import json
-import logging
 import random
 import time
 import unittest
 from unittest.mock import patch, AsyncMock
 
-import aiofiles
-
-# Adjust these imports to point to your actual module(s)
 from lib.util.openai.GPTClient import GPTClient
 from lib.util.openai.ThreadPool import ThreadPool
 from lib.util.openai.GPTClient import is_list_of_lists
 
-
-#############################################
-# Dummy Classes and Async Helper Functions
-#############################################
 
 #############################################
 # Dummy Classes and Async Helper Functions
