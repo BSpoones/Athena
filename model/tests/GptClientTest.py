@@ -183,8 +183,8 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
     async def asyncSetUp(self):
         # Patch only _connect_client and _populate_thread_pool globally.
         # We *do not* patch _create_assistant for tests that want to test its full logic.
-        self.connect_patch = patch.object(GPTClient, "_connect_client", dummy_connect_client)
-        self.thread_pool_patch = patch.object(GPTClient, "_populate_thread_pool", dummy_populate_thread_pool)
+        self.connect_patch = patch("lib.util.openai.GPTClient.GPTClient._connect_client", dummy_connect_client)
+        self.thread_pool_patch = patch("lib.util.openai.GPTClient.GPTClient._populate_thread_pool", dummy_populate_thread_pool)
         self.connect_patch.start()
         self.thread_pool_patch.start()
         # Create a dummy GPTClient instance.
