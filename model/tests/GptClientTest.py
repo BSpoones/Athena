@@ -9,7 +9,8 @@ from unittest.mock import patch, AsyncMock
 import aiofiles
 
 # Adjust these imports to point to your actual module(s)
-from lib.util.openai import GPTClient, ThreadPool
+from lib.util.openai.GPTClient import GPTClient
+from lib.util.openai.ThreadPool import ThreadPool
 from lib.util.openai.GPTClient import is_list_of_lists
 
 
