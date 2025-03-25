@@ -5,7 +5,7 @@ import asyncio
 
 import aiofiles
 from os import getenv
-from ThreadPool import ThreadPool
+from .ThreadPool import ThreadPool
 from asyncio import Queue
 from openai import AsyncOpenAI
 from openai.types.beta import Assistant, Thread
@@ -16,8 +16,9 @@ _TIMEOUT_SECS = 300  # 5 mins
 _ASSISTANT_ID = "assistant"
 _USER_ID = "user"
 _BATCH_ID_KEY = "batch_id"
-_ERROR_PATH = ".model/logs/failed.json"
-_MAX_THREAD_POOL_TRIES = 100
+_ERROR_PATH = "./logs/failed.json"
+_MAX_THREAD_POOL_TRIES = 10
+_MAX_SEMAPHORE = 100 # concurrent runs at a time
 
 
 # TODO -> Move elsewhere
@@ -50,6 +51,7 @@ class GPTClient:
         self.failed = 0
 
         self.logger = logging.getLogger(f"GPT CLIENT -  {name}")
+        self.semaphore = asyncio.Semaphore(_MAX_SEMAPHORE)
 
         self.name = name
         self.model = model
@@ -119,6 +121,10 @@ class GPTClient:
         await self._create_thread_pool(thread.pool_id, thread.previous_created_at)
 
     async def process_batch(self, batch: list[str]) -> dict[str, list[str]] | None:
+        async with self.semaphore:
+            return await self._process_batch(batch)
+
+    async def _process_batch(self, batch: list[str]) -> dict[str, list[str]] | None:
         if self._client is None:
             raise RuntimeError("Client not initialised!")
         if self._assistant is None:
