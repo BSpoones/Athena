@@ -3,9 +3,9 @@ from dataclasses import dataclass
 from openai import AsyncOpenAI
 from openai.types.beta import Thread
 
+
 # TODO -> Docstring
 
-__all__ = ["ThreadPool"]
 
 @dataclass
 class ThreadPool:
@@ -17,4 +17,4 @@ class ThreadPool:
     @classmethod
     async def create(cls, client: AsyncOpenAI, pool_id: int, previous_created_at: int):
         thread = await client.beta.threads.create()
-        return cls(pool_id, thread, previous_created_at)
+        return cls(pool_id, thread, 0, previous_created_at)
