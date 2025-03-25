@@ -212,7 +212,7 @@ class GPTClient:
             None
         )
 
-        if not assistant_message or assistant_message.context:
+        if not assistant_message or not assistant_message.context:
             response_messages = ', '.join(map(lambda m: str(m.data), messages))
             await self._log_failed_batch(
                 run.id, original_message, "No assistant message found", response_messages
