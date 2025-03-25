@@ -1,0 +1,14 @@
+# Core libraries
+pandas
+aiofiles
+openai
+python-dotenv
+
+# Testing
+pytest
+pytest-asyncio
+pytest
+pytest-asyncio
+coverage
+mypy
+ruff
