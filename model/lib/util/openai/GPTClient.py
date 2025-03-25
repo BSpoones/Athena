@@ -199,7 +199,7 @@ class GPTClient:
 
             if status.status not in ("queued", "in_progress"):
                 break
-            await asyncio.sleep(10)
+            await asyncio.sleep(1)
 
         if status.status != "completed":
             self.logger.error(f"Run {run.id} failed with status: {status.status}")
