@@ -189,7 +189,7 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
         self.thread_pool_patch.start()
         # Create a dummy GPTClient instance.
         # For tests that use _create_assistant logic, we will later stop the dummy _create_assistant patch.
-        self.assistant_patch = patch.object(GPTClient, "_create_assistant", dummy_create_assistant)
+        self.assistant_patch = patch("lib.util.openai.GPTClient.GPTClient._create_assistant", dummy_create_assistant)
         self.assistant_patch.start()
         self.client = await GPTClient.create("dummy", "dummy-model", "dummy-system", pool_size=3)
 
