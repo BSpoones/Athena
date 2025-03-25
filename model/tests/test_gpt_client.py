@@ -2,6 +2,7 @@ import asyncio
 import random
 import time
 import unittest
+import json
 from unittest.mock import patch, AsyncMock
 
 from lib.util.openai.GPTClient import GPTClient
@@ -176,7 +177,8 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
         # Patch only _connect_client and _populate_thread_pool globally.
         # We *do not* patch _create_assistant for tests that want to test its full logic.
         self.connect_patch = patch("lib.util.openai.GPTClient.GPTClient._connect_client", dummy_connect_client)
-        self.thread_pool_patch = patch("lib.util.openai.GPTClient.GPTClient._populate_thread_pool", dummy_populate_thread_pool)
+        self.thread_pool_patch = patch("lib.util.openai.GPTClient.GPTClient._populate_thread_pool",
+                                       dummy_populate_thread_pool)
         self.connect_patch.start()
         self.thread_pool_patch.start()
         # Create a dummy GPTClient instance.
@@ -603,6 +605,179 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
             failures = sum(1 for r in results if r is None)
             self.assertGreater(successes, 0)
             self.assertGreater(failures, 0)
+
+    # 1. Simulated Exception in _create_message (API failure)
+    async def test_exception_in_create_message(self):
+        async def fake_create_message_exception(thread, message):
+            raise Exception("Simulated create message failure")
+
+        with patch.object(self.client, "_create_message", fake_create_message_exception), \
+                patch.object(self.client, "_log_failed_batch", new=AsyncMock()):
+            # Ensure a thread is available
+            pool = __import__("lib.util.openai.ThreadPool", fromlist=["ThreadPool"]).ThreadPool(0, DummyThread(
+                "dummy-thread-exc"))
+            await self.client._thread_queue.put(pool)
+            response = await self.client.process_batch(["test prompt"])
+            self.assertIsNone(response)
+
+    # 2. Simulated Exception in _create_run (API failure)
+    async def test_exception_in_create_run(self):
+        async def fake_create_run_exception(thread):
+            raise Exception("Simulated create run failure")
+
+        with patch.object(self.client, "_create_run", fake_create_run_exception), \
+                patch.object(self.client, "_log_failed_batch", new=AsyncMock()):
+            pool = __import__("lib.util.openai.ThreadPool", fromlist=["ThreadPool"]).ThreadPool(0, DummyThread(
+                "dummy-thread-exc-run"))
+            await self.client._thread_queue.put(pool)
+            response = await self.client.process_batch(["test prompt"])
+            self.assertIsNone(response)
+
+        # 3. _log_failed_batch with malformed JSON in the log file
+
+    class DummyFileMalformed:
+        def __init__(self, initial_content="malformed json"):
+            self.content = initial_content
+
+        async def seek(self, pos):
+            pass
+
+        async def read(self):
+            return self.content
+
+        async def write(self, data):
+            self.content = data
+
+        async def truncate(self):
+            pass
+
+        async def __aenter__(self):
+            return self
+
+        async def __aexit__(self, exc_type, exc, tb):
+            pass
+
+    async def test_log_failed_batch_malformed_json(self):
+        with patch("aiofiles.open",
+                   new=lambda path, mode, encoding: TestGPTClient.DummyFileMalformed("malformed json")):
+            original_failed = self.client.failed
+            await self.client._log_failed_batch("run-malformed", "batch", "reason", "raw")
+            self.assertGreater(self.client.failed, original_failed)
+
+    # 4. Parsing unexpected JSON structure (e.g. a dictionary instead of list)
+    async def test_parse_json_unexpected_structure(self):
+        run = DummyRun("run-unexpected", time.time())
+        content = '{"key": "value"}'  # JSON object rather than a list/list-of-lists
+        with patch.object(self.client, "_log_failed_batch", new=AsyncMock()):
+            result = await self.client._parse_json(run, content)
+            self.assertIsNone(result)
+
+    # 5. Parsing empty JSON string
+    async def test_parse_json_empty_string(self):
+        run = DummyRun("run-empty", time.time())
+        content = ""
+        with patch.object(self.client, "_log_failed_batch", new=AsyncMock()):
+            result = await self.client._parse_json(run, content)
+            self.assertIsNone(result)
+
+    # 6. End-to-end integration test with realistic delays
+    async def test_integration_with_delays(self):
+        async def delayed_create_message(thread, message):
+            await asyncio.sleep(0.1)
+            return DummyMessage("user", time.time(), message)
+
+        async def delayed_create_run(thread):
+            await asyncio.sleep(0.1)
+            return DummyRun("run-delay", time.time())
+
+        async def delayed_get_response(thread, run, message):
+            await asyncio.sleep(0.1)
+            return True
+
+        async def delayed_get_message_response(thread, run, message):
+            await asyncio.sleep(0.1)
+            return '[["delayed response"]]'
+
+        async def delayed_parse_json(run, content):
+            await asyncio.sleep(0.1)
+            return [["delayed response"]]
+
+        with patch.object(self.client, "_create_message", delayed_create_message), \
+                patch.object(self.client, "_create_run", delayed_create_run), \
+                patch.object(self.client, "_get_response", delayed_get_response), \
+                patch.object(self.client, "_get_message_response", delayed_get_message_response), \
+                patch.object(self.client, "_parse_json", delayed_parse_json):
+            pool = __import__("lib.util.openai.ThreadPool", fromlist=["ThreadPool"]).ThreadPool(0, DummyThread(
+                "dummy-thread-delay"))
+            await self.client._thread_queue.put(pool)
+            batch = ["integration prompt"]
+            response = await self.client.process_batch(batch)
+            expected = dict(zip("integration prompt".split("\n"), [["delayed response"]]))
+            self.assertEqual(response, expected)
+
+    # 7. Edge Condition: Process Batch with an empty input batch
+    async def test_empty_batch(self):
+        async def fake_create_message(thread, message):
+            return DummyMessage("user", time.time(), message)
+
+        async def fake_create_run(thread):
+            return DummyRun("run-empty", time.time())
+
+        async def fake_get_response(thread, run, message):
+            return True
+
+        async def fake_get_message_response(thread, run, message):
+            return '[["empty response"]]'
+
+        async def fake_parse_json(run, content):
+            return [["empty response"]]
+
+        with patch.object(self.client, "_create_message", fake_create_message), \
+                patch.object(self.client, "_create_run", fake_create_run), \
+                patch.object(self.client, "_get_response", fake_get_response), \
+                patch.object(self.client, "_get_message_response", fake_get_message_response), \
+                patch.object(self.client, "_parse_json", fake_parse_json):
+            pool = __import__("lib.util.openai.ThreadPool", fromlist=["ThreadPool"]).ThreadPool(0, DummyThread(
+                "dummy-thread-empty"))
+            await self.client._thread_queue.put(pool)
+            # Empty batch input; note that "".split("\n") produces ['']
+            response = await self.client.process_batch([])
+            expected = {"": ["empty response"]}
+            self.assertEqual(response, expected)
+
+    # 8. Edge Condition: Extremely long batch input
+    async def test_long_batch(self):
+        batch = [f"line {i}" for i in range(100)]
+        long_prompt = "\n".join(batch)
+        # Build a fake JSON response: one inner list per prompt line.
+        fake_json_response = json.dumps([["response"] for _ in batch])
+
+        async def fake_create_message(thread, message):
+            return DummyMessage("user", time.time(), message)
+
+        async def fake_create_run(thread):
+            return DummyRun("run-long", time.time())
+
+        async def fake_get_response(thread, run, message):
+            return True
+
+        async def fake_get_message_response(thread, run, message):
+            return fake_json_response
+
+        async def fake_parse_json(run, content):
+            return [["response"] for _ in batch]
+
+        with patch.object(self.client, "_create_message", fake_create_message), \
+                patch.object(self.client, "_create_run", fake_create_run), \
+                patch.object(self.client, "_get_response", fake_get_response), \
+                patch.object(self.client, "_get_message_response", fake_get_message_response), \
+                patch.object(self.client, "_parse_json", fake_parse_json):
+            pool = __import__("lib.util.openai.ThreadPool", fromlist=["ThreadPool"]).ThreadPool(0, DummyThread(
+                "dummy-thread-long"))
+            await self.client._thread_queue.put(pool)
+            response = await self.client.process_batch(batch)
+            expected = dict(zip(long_prompt.split("\n"), [["response"] for _ in batch]))
+            self.assertEqual(response, expected)
 
 
 def main():

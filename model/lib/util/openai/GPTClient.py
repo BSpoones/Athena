@@ -227,10 +227,8 @@ class GPTClient:
 
     async def _parse_json(self, run: Run, content: str) -> list[list[str]] | None:
         try:
-            print(f"PARSING {content}")
             parsed_content =  json.loads(content)
-
-            if all(isinstance(i, str) for i in parsed_content):
+            if isinstance(parsed_content, list) and all(isinstance(i, str) for i in parsed_content):
                 # Model returned a flat list for a single sentence
                 return [parsed_content]
             elif all(isinstance(i, list) and all(isinstance(x, str) for x in i) for i in parsed_content):
