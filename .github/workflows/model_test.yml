@@ -1,0 +1,38 @@
+name: Model Tests
+
+on:
+  push:
+    paths:
+      - 'model/**'
+      - 'tests/model/**'
+  pull_request:
+    paths:
+      - 'model/**'
+      - 'tests/model/**'
+
+jobs:
+  test-model:
+    name: Run Model Tests
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: model
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run model tests
+        run: |
+          pytest tests/GptClientTest.py
