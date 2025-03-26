@@ -17,16 +17,38 @@ _ASSISTANT_ID = "assistant"
 _USER_ID = "user"
 _BATCH_ID_KEY = "batch_id"
 _ERROR_PATH = "./logs/failed.json"
-_MAX_THREAD_POOL_TRIES = 10
+_MAX_THREAD_POOL_TRIES = 5
 _MAX_SEMAPHORE = 100  # concurrent runs at a time
 
 
-# TODO -> Move elsewhere
-def is_list_of_lists(response: list) -> bool:
-    return isinstance(response, list) and all(
-        isinstance(sublist, list) and all(isinstance(item, str) for item in sublist)
-        for sublist in response
-    )
+def parse_model_response(response_text: str) -> list[list[str] | None]:
+    """
+    Parses a plain text response from the model into a list of lists.
+
+    The model's response is expected to have rewrites for each sentence
+    separated by double newlines. Within each group, each rewrite is on its own line.
+
+    Args:
+        response_text (str): The plain text response from the model.
+
+    Returns:
+        list[list[str]]: A list where each element is a list of rewrites (strings) for a sentence.
+    """
+    # Remove leading/trailing whitespace and split by double newline.
+    groups = response_text.strip().split("\n\n")
+    result = []
+
+    for group in groups:
+        # Split each group by newline, stripping each rewrite.
+        rewrites = [line.strip() for line in group.split("\n") if line.strip()]
+
+        if any([x.lower() == "null" for x in rewrites]):
+            result.append([])
+        else:
+            result.append(rewrites)
+
+    return result
+
 
 
 class GPTClient:
@@ -109,6 +131,7 @@ class GPTClient:
         return await self._thread_queue.get()
 
     async def _release_thread(self, thread: ThreadPool):
+        await asyncio.sleep(3) # Ensuring thread is free in API
         if thread.completion_count >= _MAX_THREAD_POOL_TRIES:
             await self._refresh_thread(thread)
             return
@@ -120,6 +143,8 @@ class GPTClient:
         await self._create_thread_pool(thread.pool_id, thread.previous_created_at)
 
     async def process_batch(self, batch: list[str]) -> dict[str, list[str]] | None:
+        if not batch:
+            return {}
         async with self.semaphore:
             return await self._process_batch(batch)
 
@@ -175,13 +200,13 @@ class GPTClient:
         if not response:
             return None
 
-        parsed = await self._parse_json(run, response)
+        formatted_responses = parse_model_response(response)
 
-        if is_list_of_lists(parsed):
-            return dict(zip(message.split("\n"), parsed))
-        else:
-            print("RESPONSE IS NOT A LIST OF LISTS!!!!!")
+        if len(formatted_responses) != len(message.split("\n")):
+            self.logger.error("Mismatch between number of prompts and response groups.")
             return None
+
+        return dict(zip(message.split("\n"), formatted_responses))
 
     async def _get_response(self, thread: Thread, run: Run, prompt: str) -> bool:
         start_time = time.time()
@@ -224,23 +249,6 @@ class GPTClient:
             return None
 
         return assistant_message.content[0].text.value
-
-    async def _parse_json(self, run: Run, content: str) -> list[list[str]] | None:
-        try:
-            parsed_content =  json.loads(content)
-            if isinstance(parsed_content, list) and all(isinstance(i, str) for i in parsed_content):
-                # Model returned a flat list for a single sentence
-                return [parsed_content]
-            elif all(isinstance(i, list) and all(isinstance(x, str) for x in i) for i in parsed_content):
-                return parsed_content
-
-            await self._log_failed_batch(run.id, content, "Response is not a list or list of lists", content)
-            return None
-
-        except Exception as e:
-            self.logger.error(f"Failed to parse JSON: {e}")
-            await self._log_failed_batch(run.id, content, "Failed to parse JSON", content)
-            return None
 
     async def _log_failed_batch(self, run_id: str, batch: str, reason: str, raw_response: str | None):
         self.failed += 1

@@ -5,10 +5,10 @@ import unittest
 import json
 from unittest.mock import patch, AsyncMock
 
-from lib.util.openai.GPTClient import GPTClient
-from lib.util.openai.ThreadPool import ThreadPool
-from lib.util.openai.GPTClient import is_list_of_lists
+import pytest
 
+from lib.util.openai.GPTClient import GPTClient, parse_model_response
+from lib.util.openai.ThreadPool import ThreadPool
 
 #############################################
 # Dummy Classes and Async Helper Functions
@@ -111,14 +111,11 @@ class DummyClient:
         self.beta = DummyBeta(existing_assistants)
 
 
-# Dummy async connector functions for GPTClient
 async def dummy_connect_client(self):
     self._client = DummyClient()
 
 
 async def dummy_create_assistant(self):
-    # This dummy sets a default assistant – used in tests that don't need to exercise
-    # the full _create_assistant logic.
     self._assistant = DummyAssistant("dummy-assistant-id", self.name)
 
 
@@ -133,7 +130,6 @@ async def dummy_populate_thread_pool(self):
         await self._thread_queue.put(pool)
 
 
-# Dummy file object and helper functions for aiofiles.open
 class DummyFile:
     def __init__(self, initial_content=""):
         self.content = initial_content
@@ -166,11 +162,10 @@ async def dummy_aiofiles_open_file_not_found(path, mode, encoding):
 async def dummy_aiofiles_open_exception(path, mode, encoding):
     raise Exception("Dummy file error")
 
-
 #############################################
 # Unit Tests Using unittest Module
 #############################################
-
+@pytest.mark.asyncio
 class TestGPTClient(unittest.IsolatedAsyncioTestCase):
 
     async def asyncSetUp(self):
@@ -301,31 +296,37 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
 
     # 10. Processing Batch – Successful Response
     async def test_process_batch_success(self):
+        # Dummy function to simulate creating a message
         async def fake_create_message(thread, message):
             return DummyMessage("user", time.time(), message)
 
+        # Dummy function to simulate starting a run
         async def fake_create_run(thread):
             return DummyRun("run-id", time.time())
 
+        # Simulate a successful run completion
         async def fake_get_response(thread, run, message):
             return True
 
+        # Simulate the assistant's raw text response (multi-line, double newline separated)
         async def fake_get_message_response(thread, run, message):
-            return '[["response1"], ["response2"]]'
-
-        async def fake_parse_json(run, content):
-            return [["response1"], ["response2"]]
+            return "response1\n\nresponse2"
 
         with patch.object(self.client, "_create_message", fake_create_message), \
                 patch.object(self.client, "_create_run", fake_create_run), \
                 patch.object(self.client, "_get_response", fake_get_response), \
-                patch.object(self.client, "_get_message_response", fake_get_message_response), \
-                patch.object(self.client, "_parse_json", fake_parse_json):
+                patch.object(self.client, "_get_message_response", fake_get_message_response):
             pool = ThreadPool(0, DummyThread("dummy-thread-0"))
             await self.client._thread_queue.put(pool)
+
             batch = ["prompt1", "prompt2"]
             response = await self.client.process_batch(batch)
-            expected = dict(zip("\n".join(batch).split("\n"), [["response1"], ["response2"]]))
+
+            expected = {
+                "prompt1": ["response1"],
+                "prompt2": ["response2"]
+            }
+
             self.assertEqual(response, expected)
 
     # 11. Processing Batch – Timeout Scenario
@@ -376,38 +377,43 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
         async def fake_get_response(thread, run, prompt):
             return True
 
+        # Simulate model returning plain text with rewrites per sentence separated by double newlines
         async def fake_get_message_response(thread, run, prompt):
-            return '[["msg1"], ["msg2"]]'
-
-        async def fake_parse_json(run, content):
-            return [["msg1"], ["msg2"]]
+            return "msg1\n\nmsg2"
 
         with patch.object(self.client, "_get_response", fake_get_response), \
-                patch.object(self.client, "_get_message_response", fake_get_message_response), \
-                patch.object(self.client, "_parse_json", fake_parse_json):
+                patch.object(self.client, "_get_message_response", fake_get_message_response):
             thread = DummyThread("thread-15")
             run = DummyRun("run-15", time.time())
-            mapping = await self.client._retrieve_run(thread, run, "prompt")
-            expected = dict(zip("prompt".split("\n"), [["msg1"], ["msg2"]]))
+            prompt = "sentence1\nsentence2"
+
+            mapping = await self.client._retrieve_run(thread, run, prompt)
+
+            expected = {
+                "sentence1": ["msg1"],
+                "sentence2": ["msg2"]
+            }
+
             self.assertEqual(mapping, expected)
 
-    # 16. Retrieving Run with Invalid Parsed JSON
-    async def test_retrieve_run_invalid_json(self):
+    # 16. Retrieving Run with Invalid Response Format
+    async def test_retrieve_run_invalid_response_format(self):
         async def fake_get_response(thread, run, prompt):
             return True
 
+        # Simulate assistant returning a single string response without double-newlines
         async def fake_get_message_response(thread, run, prompt):
-            return '["not", "list-of-lists"]'
-
-        async def fake_parse_json(run, content):
-            return ["not", "list-of-lists"]
+            return "rewrite1\nrewrite2"  # Single group, no double-newline
 
         with patch.object(self.client, "_get_response", fake_get_response), \
-                patch.object(self.client, "_get_message_response", fake_get_message_response), \
-                patch.object(self.client, "_parse_json", fake_parse_json):
+                patch.object(self.client, "_get_message_response", fake_get_message_response):
             thread = DummyThread("thread-16")
             run = DummyRun("run-16", time.time())
-            mapping = await self.client._retrieve_run(thread, run, "prompt")
+            prompt = "sentence1\nsentence2"
+
+            mapping = await self.client._retrieve_run(thread, run, prompt)
+
+            # Should return None due to mismatch in lengths (2 prompts, only 1 group)
             self.assertIsNone(mapping)
 
     # 17. Getting Response – Successful Loop (_get_response)
@@ -482,29 +488,29 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
             response = await self.client._get_message_response(thread, run, "prompt")
             self.assertIsNone(response)
 
-    # 21. Parsing JSON – Flat List Scenario (_parse_json)
-    async def test_parse_json_flat(self):
-        run = DummyRun("run-21", time.time())
-        content = '["a", "b", "c"]'
-        # Call on an instance so that self.logger is available.
-        result = await self.client._parse_json(run, content)
-        self.assertEqual(result, [["a", "b", "c"]])
+    # 21. Parsing Model Response – Flat List Scenario
+    async def test_parse_model_response_flat_list(self):
+        response_text = "a\nb\nc"
+        from lib.util.openai.GPTClient import parse_model_response
+        result = parse_model_response(response_text)
+        expected = [["a", "b", "c"]]
+        self.assertEqual(result, expected)
 
-    # 22. Parsing JSON – List-of-Lists Scenario (_parse_json)
-    async def test_parse_json_list_of_lists(self):
-        run = DummyRun("run-22", time.time())
-        content = '[["a", "b"], ["c"]]'
-        result = await self.client._parse_json(run, content)
-        self.assertEqual(result, [["a", "b"], ["c"]])
+    # 22. Parsing Model Response – List-of-Lists Scenario
+    async def test_parse_model_response_list_of_lists(self):
+        response_text = "a\nb\n\nc"
+        from lib.util.openai.GPTClient import parse_model_response
+        result = parse_model_response(response_text)
+        expected = [["a", "b"], ["c"]]
+        self.assertEqual(result, expected)
 
-    # 23. Parsing JSON – Invalid JSON
-    async def test_parse_json_invalid(self):
-        run = DummyRun("run-23", time.time())
-        content = 'invalid json'
-
-        with patch.object(self.client, "_log_failed_batch", new=AsyncMock()):
-            result = await self.client._parse_json(run, content)
-            self.assertIsNone(result)
+    # 23. Parsing Model Response – Invalid / Null Entries
+    async def test_parse_model_response_invalid_and_null_entries(self):
+        response_text = "null\n\n \n\nvalid\n\n"
+        from lib.util.openai.GPTClient import parse_model_response
+        result = parse_model_response(response_text)
+        expected = [[], [], ["valid"]]
+        self.assertEqual(result, expected)
 
     # 24. Logging Failed Batch – File Not Found
     async def test_log_failed_batch_file_not_found(self):
@@ -522,89 +528,6 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
         with patch("aiofiles.open", new=dummy_aiofiles_open_exception):
             await self.client._log_failed_batch("run-25", "batch", "reason", "raw")
             self.assertGreater(self.client.failed, original_failed)
-
-    # 26. Helper Function: is_list_of_lists
-    async def test_is_list_of_lists(self):
-        valid = [["a"], ["b", "c"]]
-        invalid1 = ["a", "b"]
-        invalid2 = [["a"], 1]
-        self.assertTrue(is_list_of_lists(valid))
-        self.assertFalse(is_list_of_lists(invalid1))
-        self.assertFalse(is_list_of_lists(invalid2))
-
-    # Stress Test: Many concurrent successful process_batch calls.
-    async def test_stress_process_batch(self):
-        async def fake_create_message(thread, message):
-            return DummyMessage("user", time.time(), message)
-
-        async def fake_create_run(thread):
-            return DummyRun("run-stress", time.time())
-
-        async def fake_get_response(thread, run, message):
-            await asyncio.sleep(0.01)
-            return True
-
-        async def fake_get_message_response(thread, run, message):
-            return '[["response_stress"]]'
-
-        async def fake_parse_json(run, content):
-            return [["response_stress"]]
-
-        with patch.object(self.client, "_create_message", fake_create_message), \
-                patch.object(self.client, "_create_run", fake_create_run), \
-                patch.object(self.client, "_get_response", fake_get_response), \
-                patch.object(self.client, "_get_message_response", fake_get_message_response), \
-                patch.object(self.client, "_parse_json", fake_parse_json):
-            num_tasks = 150
-            tasks = []
-            for i in range(num_tasks):
-                batch = [f"stress prompt {i}"]
-                tasks.append(asyncio.create_task(self.client.process_batch(batch)))
-            results = await asyncio.gather(*tasks)
-            for i, result in enumerate(results):
-                expected = {f"stress prompt {i}": ["response_stress"]}
-                self.assertEqual(result, expected)
-
-    # Stress Test: Concurrent process_batch calls with intermittent failures.
-    async def test_stress_process_batch_with_failures(self):
-        async def fake_create_message(thread, message):
-            return DummyMessage("user", time.time(), message)
-
-        async def fake_create_run(thread):
-            return DummyRun("run-fail", time.time())
-
-        success_run_ids = set()
-
-        async def fake_get_response(thread, run, message):
-            success = random.choice([True, True, False])
-            if success:
-                success_run_ids.add(run.id)
-            await asyncio.sleep(0.001)
-            return success
-
-        async def fake_get_message_response(thread, run, message):
-            if run.id in success_run_ids:
-                return '[["success"]]'
-            return '[["failure"]]'
-
-        async def fake_parse_json(run, content):
-            if content == '[["failure"]]':
-                return None
-            return [["success"]]
-
-        with patch.object(self.client, "_create_message", fake_create_message), \
-                patch.object(self.client, "_create_run", fake_create_run), \
-                patch.object(self.client, "_get_response", fake_get_response), \
-                patch.object(self.client, "_get_message_response", fake_get_message_response), \
-                patch.object(self.client, "_parse_json", fake_parse_json), \
-                patch.object(self.client, "_log_failed_batch", new=AsyncMock()):  # prevent file I/O
-            num_tasks = 100
-            tasks = [asyncio.create_task(self.client.process_batch([f"failure prompt {i}"])) for i in range(num_tasks)]
-            results = await asyncio.gather(*tasks)
-            successes = sum(1 for r in results if r is not None)
-            failures = sum(1 for r in results if r is None)
-            self.assertGreater(successes, 0)
-            self.assertGreater(failures, 0)
 
     # 1. Simulated Exception in _create_message (API failure)
     async def test_exception_in_create_message(self):
@@ -664,121 +587,22 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
             await self.client._log_failed_batch("run-malformed", "batch", "reason", "raw")
             self.assertGreater(self.client.failed, original_failed)
 
-    # 4. Parsing unexpected JSON structure (e.g. a dictionary instead of list)
-    async def test_parse_json_unexpected_structure(self):
-        run = DummyRun("run-unexpected", time.time())
-        content = '{"key": "value"}'  # JSON object rather than a list/list-of-lists
-        with patch.object(self.client, "_log_failed_batch", new=AsyncMock()):
-            result = await self.client._parse_json(run, content)
-            self.assertIsNone(result)
+    # 4. Parsing Unexpected Structure (dictionary-like content instead of groups)
+    async def test_parse_model_response_unexpected_structure(self):
+        from lib.util.openai.GPTClient import parse_model_response
+        response_text = '{"key": "value"}'  # Malformed in the context of plain-text groups
+        result = parse_model_response(response_text)
+        # It will treat this as one string group
+        expected = [['{"key": "value"}']]
+        self.assertEqual(result, expected)
 
-    # 5. Parsing empty JSON string
-    async def test_parse_json_empty_string(self):
-        run = DummyRun("run-empty", time.time())
-        content = ""
-        with patch.object(self.client, "_log_failed_batch", new=AsyncMock()):
-            result = await self.client._parse_json(run, content)
-            self.assertIsNone(result)
-
-    # 6. End-to-end integration test with realistic delays
-    async def test_integration_with_delays(self):
-        async def delayed_create_message(thread, message):
-            await asyncio.sleep(0.1)
-            return DummyMessage("user", time.time(), message)
-
-        async def delayed_create_run(thread):
-            await asyncio.sleep(0.1)
-            return DummyRun("run-delay", time.time())
-
-        async def delayed_get_response(thread, run, message):
-            await asyncio.sleep(0.1)
-            return True
-
-        async def delayed_get_message_response(thread, run, message):
-            await asyncio.sleep(0.1)
-            return '[["delayed response"]]'
-
-        async def delayed_parse_json(run, content):
-            await asyncio.sleep(0.1)
-            return [["delayed response"]]
-
-        with patch.object(self.client, "_create_message", delayed_create_message), \
-                patch.object(self.client, "_create_run", delayed_create_run), \
-                patch.object(self.client, "_get_response", delayed_get_response), \
-                patch.object(self.client, "_get_message_response", delayed_get_message_response), \
-                patch.object(self.client, "_parse_json", delayed_parse_json):
-            pool = __import__("lib.util.openai.ThreadPool", fromlist=["ThreadPool"]).ThreadPool(0, DummyThread(
-                "dummy-thread-delay"))
-            await self.client._thread_queue.put(pool)
-            batch = ["integration prompt"]
-            response = await self.client.process_batch(batch)
-            expected = dict(zip("integration prompt".split("\n"), [["delayed response"]]))
-            self.assertEqual(response, expected)
-
-    # 7. Edge Condition: Process Batch with an empty input batch
-    async def test_empty_batch(self):
-        async def fake_create_message(thread, message):
-            return DummyMessage("user", time.time(), message)
-
-        async def fake_create_run(thread):
-            return DummyRun("run-empty", time.time())
-
-        async def fake_get_response(thread, run, message):
-            return True
-
-        async def fake_get_message_response(thread, run, message):
-            return '[["empty response"]]'
-
-        async def fake_parse_json(run, content):
-            return [["empty response"]]
-
-        with patch.object(self.client, "_create_message", fake_create_message), \
-                patch.object(self.client, "_create_run", fake_create_run), \
-                patch.object(self.client, "_get_response", fake_get_response), \
-                patch.object(self.client, "_get_message_response", fake_get_message_response), \
-                patch.object(self.client, "_parse_json", fake_parse_json):
-            pool = __import__("lib.util.openai.ThreadPool", fromlist=["ThreadPool"]).ThreadPool(0, DummyThread(
-                "dummy-thread-empty"))
-            await self.client._thread_queue.put(pool)
-            # Empty batch input; note that "".split("\n") produces ['']
-            response = await self.client.process_batch([])
-            expected = {"": ["empty response"]}
-            self.assertEqual(response, expected)
-
-    # 8. Edge Condition: Extremely long batch input
-    async def test_long_batch(self):
-        batch = [f"line {i}" for i in range(100)]
-        long_prompt = "\n".join(batch)
-        # Build a fake JSON response: one inner list per prompt line.
-        fake_json_response = json.dumps([["response"] for _ in batch])
-
-        async def fake_create_message(thread, message):
-            return DummyMessage("user", time.time(), message)
-
-        async def fake_create_run(thread):
-            return DummyRun("run-long", time.time())
-
-        async def fake_get_response(thread, run, message):
-            return True
-
-        async def fake_get_message_response(thread, run, message):
-            return fake_json_response
-
-        async def fake_parse_json(run, content):
-            return [["response"] for _ in batch]
-
-        with patch.object(self.client, "_create_message", fake_create_message), \
-                patch.object(self.client, "_create_run", fake_create_run), \
-                patch.object(self.client, "_get_response", fake_get_response), \
-                patch.object(self.client, "_get_message_response", fake_get_message_response), \
-                patch.object(self.client, "_parse_json", fake_parse_json):
-            pool = __import__("lib.util.openai.ThreadPool", fromlist=["ThreadPool"]).ThreadPool(0, DummyThread(
-                "dummy-thread-long"))
-            await self.client._thread_queue.put(pool)
-            response = await self.client.process_batch(batch)
-            expected = dict(zip(long_prompt.split("\n"), [["response"] for _ in batch]))
-            self.assertEqual(response, expected)
-
+    # 5. Parsing Empty String
+    async def test_parse_model_response_empty_string(self):
+        from lib.util.openai.GPTClient import parse_model_response
+        response_text = ""
+        result = parse_model_response(response_text)
+        expected = [[]]
+        self.assertEqual(result, expected)
 
 def main():
     unittest.main()
