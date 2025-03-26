@@ -1,6 +1,7 @@
-from lib.util.enums.ElementTypeEnum import ElementType
+from enum import Enum
 
-class ThreatType(ElementType):
+class ThreatType(Enum):
+    NONE = 0
     EXPLICIT = 1
     IMPLICIT = 2
     REPUTATION = 3

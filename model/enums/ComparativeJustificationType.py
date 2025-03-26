@@ -1,6 +1,7 @@
-from lib.util.enums.ElementTypeEnum import ElementType
+from enum import Enum
 
-class ComparativeJustificationType(ElementType):
+class ComparativeJustificationType(Enum):
+    NONE = 0
     EXTERNAL = 1
     POST_HARDSHIP = 2
     SOCIAL = 3

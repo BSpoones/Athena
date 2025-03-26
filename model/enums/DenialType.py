@@ -1,6 +1,7 @@
-from lib.util.enums.ElementTypeEnum import ElementType
+from enum import Enum
 
-class DenialType(ElementType):
+class DenialType(Enum):
+    NONE = 0
     ABSOLUTE = 1
     CONSENT_BASED = 2
     HARM = 3

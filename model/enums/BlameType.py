@@ -1,6 +1,7 @@
-from lib.util.enums.ElementTypeEnum import ElementType
+from enum import Enum
 
-class BlameType(ElementType):
+class BlameType(Enum):
+    NONE = 0
     PERSONAL = 1
     CIRCUMSTANCE = 2
     REACTIVE = 3

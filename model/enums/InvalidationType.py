@@ -1,6 +1,7 @@
-from lib.util.enums.ElementTypeEnum import ElementType
+from enum import Enum
 
-class InvalidationType(ElementType):
+class InvalidationType(Enum):
+    NONE = 0
     DICTATORIAL = 1
     PERSPECTIVE = 2
     REALITY = 3

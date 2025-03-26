@@ -1,6 +1,7 @@
-from lib.util.enums.ElementTypeEnum import ElementType
+from enum import Enum
 
-class DownplayingType(ElementType):
+class DownplayingType(Enum):
+    NONE = 0
     COMPARATIVE = 1
     DELAYED = 2
     EXAGGERATION = 3

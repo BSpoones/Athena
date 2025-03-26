@@ -1,6 +1,7 @@
-from lib.util.enums.ElementTypeEnum import ElementType
+from enum import Enum
 
-class PowerImbalanceType(ElementType):
+class PowerImbalanceType(Enum):
+    NONE = 0
     AUTHORITY = 1
     KNOWLEDGE = 2
     RESOURCE = 3

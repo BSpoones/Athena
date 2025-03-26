@@ -1,6 +1,7 @@
-from lib.util.enums.ElementTypeEnum import ElementType
+from enum import Enum
 
-class MemoryDistortionType(ElementType):
+class MemoryDistortionType(Enum):
+    NONE = 0
     FABRICATION = 1
     OVERWRITING = 2
     RETROSPECTIVE = 3
