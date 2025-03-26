@@ -1,12 +1,8 @@
-import asyncio
-import random
 import time
 import unittest
-import json
-from unittest.mock import patch, AsyncMock
-
 import pytest
 
+from unittest.mock import patch, AsyncMock
 from lib.util.openai.GPTClient import GPTClient, parse_model_response
 from lib.util.openai.ThreadPool import ThreadPool
 
@@ -153,13 +149,13 @@ class DummyFile:
         pass
 
 
-async def dummy_aiofiles_open_file_not_found(path, mode, encoding):
+def dummy_aiofiles_open_file_not_found(path, mode, encoding):
     if mode == "r+":
         raise FileNotFoundError
     return DummyFile()
 
 
-async def dummy_aiofiles_open_exception(path, mode, encoding):
+def dummy_aiofiles_open_exception(path, mode, encoding):
     raise Exception("Dummy file error")
 
 #############################################
@@ -491,7 +487,6 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
     # 21. Parsing Model Response – Flat List Scenario
     async def test_parse_model_response_flat_list(self):
         response_text = "a\nb\nc"
-        from lib.util.openai.GPTClient import parse_model_response
         result = parse_model_response(response_text)
         expected = [["a", "b", "c"]]
         self.assertEqual(result, expected)
@@ -499,7 +494,6 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
     # 22. Parsing Model Response – List-of-Lists Scenario
     async def test_parse_model_response_list_of_lists(self):
         response_text = "a\nb\n\nc"
-        from lib.util.openai.GPTClient import parse_model_response
         result = parse_model_response(response_text)
         expected = [["a", "b"], ["c"]]
         self.assertEqual(result, expected)
@@ -507,7 +501,6 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
     # 23. Parsing Model Response – Invalid / Null Entries
     async def test_parse_model_response_invalid_and_null_entries(self):
         response_text = "null\n\n \n\nvalid\n\n"
-        from lib.util.openai.GPTClient import parse_model_response
         result = parse_model_response(response_text)
         expected = [[], [], ["valid"]]
         self.assertEqual(result, expected)
@@ -589,7 +582,6 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
 
     # 4. Parsing Unexpected Structure (dictionary-like content instead of groups)
     async def test_parse_model_response_unexpected_structure(self):
-        from lib.util.openai.GPTClient import parse_model_response
         response_text = '{"key": "value"}'  # Malformed in the context of plain-text groups
         result = parse_model_response(response_text)
         # It will treat this as one string group
@@ -598,7 +590,6 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
 
     # 5. Parsing Empty String
     async def test_parse_model_response_empty_string(self):
-        from lib.util.openai.GPTClient import parse_model_response
         response_text = ""
         result = parse_model_response(response_text)
         expected = [[]]
