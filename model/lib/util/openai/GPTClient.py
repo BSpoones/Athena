@@ -11,6 +11,8 @@ from openai import AsyncOpenAI
 from openai.types.beta import Assistant, Thread
 from openai.types.beta.threads import Run, Message
 
+from ..list_extensions import parse_list_response
+
 _NAME = "Athena-Augmentation"
 _TIMEOUT_SECS = 300  # 5 mins
 _ASSISTANT_ID = "assistant"
@@ -19,37 +21,6 @@ _BATCH_ID_KEY = "batch_id"
 _ERROR_PATH = "./logs/failed.json"
 _MAX_THREAD_POOL_TRIES = 5
 _MAX_SEMAPHORE = 100  # concurrent runs at a time
-
-
-def parse_model_response(response_text: str) -> list[list[str] | None]:
-    """
-    Parses a plain text response from the model into a list of lists.
-
-    The model's response is expected to have rewrites for each sentence
-    separated by double newlines. Within each group, each rewrite is on its own line.
-
-    Args:
-        response_text (str): The plain text response from the model.
-
-    Returns:
-        list[list[str]]: A list where each element is a list of rewrites (strings) for a sentence.
-    """
-    # Remove leading/trailing whitespace and split by double newline.
-    groups = response_text.strip().split("\n\n")
-    result = []
-
-    for group in groups:
-        # Split each group by newline, stripping each rewrite.
-        rewrites = [line.strip() for line in group.split("\n") if line.strip()]
-
-        if any([x.lower() == "null" for x in rewrites]):
-            result.append([])
-        else:
-            result.append(rewrites)
-
-    return result
-
-
 
 class GPTClient:
 
@@ -200,7 +171,7 @@ class GPTClient:
         if not response:
             return None
 
-        formatted_responses = parse_model_response(response)
+        formatted_responses = parse_list_response(response)
 
         if len(formatted_responses) != len(message.split("\n")):
             self.logger.error("Mismatch between number of prompts and response groups.")
