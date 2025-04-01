@@ -12,6 +12,8 @@ from .MemoryDistortionType import MemoryDistortionType
 from .PowerImbalanceType import PowerImbalanceType
 from .ThreatType import ThreatType
 
+AUGMENT_PATH = "./data/augmented/sentence_reordering/"
+NORMALISATION_PATH = "./data/normalised/"
 
 __all__ = {
     BlameType: "blame",
