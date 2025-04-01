@@ -1,14 +1,10 @@
 # Core libraries
-pandas
-aiofiles
-openai
-python-dotenv
+pandas~=2.2.3
+aiofiles~=24.1.0
+openai~=1.68.2
+python-dotenv~=1.0.1
+emoji~=2.14.1
 
 # Testing
-pytest
-pytest-asyncio
-pytest
-pytest-asyncio
-coverage
-mypy
-ruff
+pytest~=8.3.5
+pyspellchecker~=0.8.2
