@@ -7,4 +7,5 @@ emoji~=2.14.1
 
 # Testing
 pytest~=8.3.5
+pytest-asyncio~=0.26.0
 pyspellchecker~=0.8.2
