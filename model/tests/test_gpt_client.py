@@ -6,6 +6,7 @@ from unittest.mock import patch, AsyncMock
 from lib.util.openai.GPTClient import GPTClient, parse_list_response
 from lib.util.openai.ThreadPool import ThreadPool
 
+
 #############################################
 # Dummy Classes and Async Helper Functions
 #############################################
@@ -157,6 +158,7 @@ def dummy_aiofiles_open_file_not_found(path, mode, encoding):
 
 def dummy_aiofiles_open_exception(path, mode, encoding):
     raise Exception("Dummy file error")
+
 
 #############################################
 # Unit Tests Using unittest Module
@@ -594,6 +596,7 @@ class TestGPTClient(unittest.IsolatedAsyncioTestCase):
         result = parse_list_response(response_text)
         expected = [[]]
         self.assertEqual(result, expected)
+
 
 def main():
     unittest.main()
