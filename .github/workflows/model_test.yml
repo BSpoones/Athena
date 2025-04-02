@@ -43,6 +43,4 @@ jobs:
 
       - name: Run model tests
         run: |
-          pytest \
-            --asyncio-mode=auto \
-            -o asyncio_default_fixture_loop_scope=function
+          pytest -n auto
