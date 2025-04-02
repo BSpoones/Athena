@@ -2,6 +2,9 @@ import unittest
 from typing import List
 from lib.util.list_extensions import group_by, chunked, parse_list_response
 
+# TODO -> Separate out tests properly
+# TODO -> Comment code
+# TODO -> Ensure full test coverage
 
 class TestGroupBy(unittest.TestCase):
     def test_group_by_normal_strings(self):
