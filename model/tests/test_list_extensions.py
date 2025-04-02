@@ -2,9 +2,11 @@ import unittest
 from typing import List
 from lib.util.list_extensions import group_by, chunked, parse_list_response
 
+
 # TODO -> Separate out tests properly
 # TODO -> Comment code
 # TODO -> Ensure full test coverage
+
 
 class TestGroupBy(unittest.TestCase):
     def test_group_by_normal_strings(self):
@@ -91,6 +93,7 @@ class TestGroupBy(unittest.TestCase):
         self.assertEqual([obj.name for obj in result["fruit"]], ["apple", "banana"])
         self.assertEqual([obj.name for obj in result["veg"]], ["carrot"])
 
+
 class TestChunked(unittest.TestCase):
 
     def test_even_chunks(self):
@@ -149,6 +152,7 @@ class TestChunked(unittest.TestCase):
         values = [1, 2, 3]
         with self.assertRaises(TypeError):
             list(chunked(values, "two"))  # type: ignore
+
 
 class TestParseListResponse(unittest.TestCase):
 
