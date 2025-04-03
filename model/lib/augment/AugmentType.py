@@ -14,7 +14,7 @@ class AugmentationType(Enum):
     SENTENCE_REORDERING = 5
 
     def input_directory(self) -> str:
-        path = "./data/"
+        path = "./data/element"
 
         match self:
             case AugmentationType.EMOTIONAL_TONE:
@@ -33,7 +33,7 @@ class AugmentationType(Enum):
                 raise ValueError(f"Unknown AugmentationType: {self}")
 
     def output_directory(self) -> str:
-        path = "./data/"
+        path = "./data/element"
 
         match self:
             case AugmentationType.EMOTIONAL_TONE:
