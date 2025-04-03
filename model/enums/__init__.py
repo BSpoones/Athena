@@ -1,31 +1,26 @@
-from . import *
+from enums.BlameType import BlameType
+from enums.ComparativeJustificationType import ComparativeJustificationType
+from enums.DenialType import DenialType
+from enums.DownplayingType import DownplayingType
+from enums.EmotionalConnectionType import EmotionalConnectionType
+from enums.EmotionalLeverageType import EmotionalLeverageType
+from enums.ExpectationType import ExpectationType
+from enums.InvalidationType import InvalidationType
+from enums.MemoryDistortionType import MemoryDistortionType
+from enums.PowerImbalanceType import PowerImbalanceType
+from enums.ThreatType import ThreatType
 
-from .BlameType import BlameType
-from .ComparativeJustificationType import ComparativeJustificationType
-from .DenialType import DenialType
-from .DownplayingType import DownplayingType
-from .EmotionalConnectionType import EmotionalConnectionType
-from .EmotionalLeverageType import EmotionalLeverageType
-from .ExpectationType import ExpectationType
-from .InvalidationType import InvalidationType
-from .MemoryDistortionType import MemoryDistortionType
-from .PowerImbalanceType import PowerImbalanceType
-from .ThreatType import ThreatType
-
-AUGMENT_PATH = "./data/augmented/sentence_reordering/"
-NORMALISATION_PATH = "./data/normalised/"
-
-__all__ = {
-    BlameType: "blame",
-    ComparativeJustificationType: "comparative_justification",
-    DenialType: "denial",
-    DownplayingType: "downplaying",
-    EmotionalConnectionType: "emotional_connection",
-    EmotionalLeverageType: "emotional_leverage",
-    ExpectationType: "expectation",
-    InvalidationType: "invalidation",
-    MemoryDistortionType: "memory_distortion",
-    PowerImbalanceType: "power_imbalance",
-    ThreatType: "threat"
-}
+__all__ = [
+    BlameType,
+    ComparativeJustificationType,
+    DenialType,
+    DownplayingType,
+    EmotionalConnectionType,
+    EmotionalLeverageType,
+    ExpectationType,
+    InvalidationType,
+    MemoryDistortionType,
+    PowerImbalanceType,
+    ThreatType,
+]
 
