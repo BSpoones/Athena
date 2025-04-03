@@ -15,7 +15,8 @@ ELEMENT_PATHS = {
     ThreatType: "threat"
 }
 
-AUGMENT_PATH = "./data/element/augmented/sentence_reordering/"
+RAW_PATH = "./data/element/raw/"
+AUGMENT_PATH = "./data/element/augmented/paraphrase/"
 NORMALISATION_PATH = "./data/element/normalised/"
 
 SLANG_PATH = "./data/datasets/slang/slang.json"
