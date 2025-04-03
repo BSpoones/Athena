@@ -5,9 +5,9 @@ from pandas import DataFrame, Series
 from spellchecker import SpellChecker
 
 import enums
+from data import AUGMENT_PATH, NORMALISATION_PATH, SLANG_PATH, LOCALISATION_PATH, PUNCTUATION_PATH, ELEMENT_PATHS
 import pandas as pd
 
-from data import *
 
 
 def text_transform(text: str) -> str:
@@ -30,8 +30,8 @@ class Normaliser:
         self.element_type = element_type
         file = element_type + ".csv"
 
-        self.input = enums.AUGMENT_PATH + file
-        self.output = enums.NORMALISATION_PATH + file
+        self.input = AUGMENT_PATH + file
+        self.output = NORMALISATION_PATH + file
 
         self.data: DataFrame = pd.read_csv(self.input)
 
@@ -107,7 +107,7 @@ class Normaliser:
 
 
 def main():
-    for element, name in enums.__all__.items():
+    for element, name in ELEMENT_PATHS.items():
         print(f"Normalising {name}")
         Normaliser(name).normalise()
         print(f"Normalisation complete!")

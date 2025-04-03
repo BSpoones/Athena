@@ -4,6 +4,7 @@ import logging
 import os
 import aiofiles
 import enums
+from data import ELEMENT_PATHS
 
 from lib.augment.AugmentType import AugmentationType
 from lib.util.list_extensions import group_by, chunked
@@ -31,7 +32,7 @@ class Augmentation:
         self.logger.info("Creating client")
         await self.create_gpt_client()
 
-        for element, name in enums.__all__.items():
+        for element, name in ELEMENT_PATHS.items():
             csv_name = name + ".csv"
             input_path = self.input_path + csv_name
             output_path = self.output_path + csv_name
