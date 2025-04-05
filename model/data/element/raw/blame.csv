@@ -1,287 +1,187 @@
 cluster_id,type,sentence
-1,0,"I don’t really know how to feel about what just happened."
-2,0,"I’m not angry, I’m just trying to process everything."
-3,0,"This isn’t easy for me to talk about."
-4,0,"I just need a bit of space right now."
-5,0,"Can we talk about this when things calm down?"
-6,0,"I’m feeling really overwhelmed lately."
-7,0,"I don’t think either of us meant for it to get this far."
-8,0,"Let’s just pause for a second."
-9,0,"It feels like we keep missing each other emotionally."
-10,0,"I know we’re both trying in our own ways."
-11,0,"I'm just confused — not pointing fingers."
-12,0,"This conversation is starting to drain me."
-13,0,"I’m not sure how to fix this, but I want to try."
-14,0,"It doesn’t feel like we’re hearing each other."
-15,0,"I don’t have the right words for this yet."
-16,0,"We seem to be on different pages again."
-17,0,"I’m not saying you did anything wrong — I just feel off."
-18,0,"We’ve had a lot on our plates lately."
-19,0,"I’m not trying to accuse you of anything."
-20,0,"This dynamic has been difficult for both of us."
-21,0,"I hate how this keeps happening between us."
-22,0,"I feel like something's missing when we talk."
-23,0,"This isn’t working the way I hoped it would."
-24,0,"I think we need to reset and figure out where we stand."
-25,0,"Sometimes it feels like we’re walking on eggshells."
-26,0,"It’s hard to bring this up, but I feel like I need to."
-27,0,"I want us to move forward without more damage."
-28,0,"It’s not about blame — it’s about understanding."
-29,0,"We’ve both been distant lately."
-30,0,"There’s a heaviness in the air whenever we talk."
-31,0,"We’ve drifted and I don’t know how to pull us back."
-32,0,"I'm not mad — I'm just emotionally exhausted."
-33,0,"Something about this doesn’t sit right with me."
-34,0,"I don’t think we’re hearing each other clearly."
-35,0,"I’ve been shutting down instead of speaking up."
-36,0,"We both need to feel safe in this space."
-37,0,"This doesn’t feel like us."
-38,0,"I want to be honest, but I don’t want to hurt you."
-39,0,"It feels like we’re in a loop we can’t escape."
-40,0,"I’m not sure if we’re growing together anymore."
-41,0,"I miss how we used to talk to each other."
-42,0,"This isn’t a blame game — it’s about clarity."
-43,0,"The silence between us is getting louder."
-44,0,"We’ve hit a wall and I don’t know what’s next."
-45,0,"I think we’re both carrying old weight."
-46,0,"Let’s try to move forward without rehashing it."
-47,0,"We don’t need to solve it tonight."
-48,0,"I’m not trying to win — I just want peace."
-49,0,"We both said things we didn’t mean."
-50,0,"Can we focus on healing instead of the past?"
-51,0,"I feel distant lately, and I don’t know why."
-52,0,"We’ve been off lately, haven’t we?"
-53,0,"This just doesn’t feel like a safe space anymore."
-54,0,"I’m not sure I can keep pretending everything’s fine."
-55,0,"Something feels broken, but I don’t know what it is."
-56,0,"I wish I knew how to make this better."
-57,0,"I’m not sure I trust myself to talk right now."
-58,0,"The energy between us has changed."
-59,0,"I can feel something is wrong, but I can’t explain it."
-60,0,"I’m struggling to connect, and that scares me."
-61,0,"Maybe we’ve just grown apart."
-62,0,"We keep circling the same problems without progress."
-63,0,"I don’t feel heard, and that matters to me."
-64,0,"I need time to think before we keep talking."
-65,0,"There’s a tension I can’t seem to shake."
-66,0,"I want to talk, but I don’t know where to start."
-67,0,"It’s not that I don’t care — I’m just tired."
-68,0,"I wish we could communicate better."
-69,0,"We’ve been so disconnected lately."
-70,0,"I’ve been holding things in and now it’s too much."
-71,0,"Even silence between us feels loud."
-72,0,"I want to fix this, but I’m scared it’s too late."
-73,0,"Sometimes I just want to run away from everything."
-74,0,"I don’t know what version of us we’re trying to be."
-75,0,"This doesn’t feel like home anymore."
-76,0,"I'm unsure what we're even fighting for anymore."
-77,0,"We talk, but it doesn’t feel like communication."
-78,0,"It’s like we’re two strangers who used to be close."
-79,0,"I feel emotionally numb around you lately."
-80,0,"I’m tired of pretending everything’s okay."
-81,0,"I need emotional space, not physical distance."
-82,0,"We need more than just words right now."
-83,0,"It’s not about who’s right — it’s about being real."
-84,0,"I’m scared of what this distance means."
-85,0,"I don’t want to walk on eggshells anymore."
-86,0,"We’ve stopped trying to understand each other."
-87,0,"I want something to change, but I don’t know what."
-88,0,"This relationship deserves more than survival mode."
-89,0,"There’s too much silence where there used to be warmth."
-90,0,"I feel emotionally invisible."
-91,0,"We’re in the same room but worlds apart."
-92,0,"I want to feel safe in your presence again."
-93,0,"I miss the days when we didn’t need to explain everything."
-94,0,"I don’t feel like I matter when we’re like this."
-95,0,"I feel like I’m the only one still trying."
-96,0,"I hate how distant we’ve become."
-97,0,"I’m losing parts of myself in this silence."
-98,0,"Can we just pause and breathe together for a minute?"
-99,0,"I feel like we’re both avoiding the real issue."
-100,0,"I want to rebuild, but I’m not sure how anymore."
-101,1,"You're the reason I can't trust anyone"
-102,1,"You're the one who's being difficult"
-103,1,"You're the reason I can't be myself"
-104,1,"You're the one who's always unhappy"
-105,1,"You're the one who's making this difficult"
-106,1,"You're the reason I have to lie"
-107,1,"You're the one who's causing all the stress"
-108,1,"You're the reason I can't have any peace"
-109,1,"You're the reason I can't enjoy anything"
-110,1,"You're the reason I can't trust you"
-111,1,"You're the one who's being unreasonable"
-112,1,"You're the reason I can't be happy"
-113,1,"You're always ruining everything"
-114,1,"You're the reason I can't have any fun"
-115,1,"You're the one who's always dissatisfied"
-116,1,"You're the reason I have to be this way"
-117,1,"You're the reason I have to be on edge"
-118,1,"You're the one who's always causing fights"
-119,1,"You're the one breaking the peace"
-120,1,"You're the one who's making things worse"
-121,1,"You're the reason I can't relax"
-122,1,"You're the reason I get so angry"
-123,1,"You're the reason we're in this mess"
-124,1,"You're the one causing all the problems"
-125,1,"It's your fault you won't see that"
-126,1,"You are making everyone else miserable"
-127,1,"You're the reason I can't sleep at night"
+101,1,You're the reason I can't trust anyone
+102,1,You're the one who's being difficult
+103,1,You're the reason I can't be myself
+104,1,You're the one who's always unhappy
+105,1,You're the one who's making this difficult
+106,1,You're the reason I have to lie
+107,1,You're the one who's causing all the stress
+108,1,You're the reason I can't have any peace
+109,1,You're the reason I can't enjoy anything
+110,1,You're the reason I can't trust you
+111,1,You're the one who's being unreasonable
+112,1,You're the reason I can't be happy
+113,1,You're always ruining everything
+114,1,You're the reason I can't have any fun
+115,1,You're the one who's always dissatisfied
+116,1,You're the reason I have to be this way
+117,1,You're the reason I have to be on edge
+118,1,You're the one who's always causing fights
+119,1,You're the one breaking the peace
+120,1,You're the one who's making things worse
+121,1,You're the reason I can't relax
+122,1,You're the reason I get so angry
+123,1,You're the reason we're in this mess
+124,1,You're the one causing all the problems
+125,1,It's your fault you won't see that
+126,1,You are making everyone else miserable
+127,1,You're the reason I can't sleep at night
 128,1,"Because of you, I have to drink to cope"
-129,1,"Everything goes wrong when you're involved"
+129,1,Everything goes wrong when you're involved
 130,1,"If you weren’t so stupid, this wouldn’t have happened"
-131,1,"You ruin every good thing in my life"
-132,1,"You make me hate coming home"
-133,1,"You push everyone away with your behavior"
-134,1,"You always make things harder than they need to be"
-135,1,"You're the one who destroyed this relationship"
-136,1,"You're why I can’t have nice things"
+131,1,You ruin every good thing in my life
+132,1,You make me hate coming home
+133,1,You push everyone away with your behavior
+134,1,You always make things harder than they need to be
+135,1,You're the one who destroyed this relationship
+136,1,You're why I can’t have nice things
 137,1,"You caused all this pain, and you don’t even care"
-138,1,"You're the reason I'm miserable"
-139,1,"You make everything about you and leave me with nothing"
-140,1,"You're the problem in every situation"
-141,1,"You brought this on yourself"
-142,1,"You always find a way to ruin the mood"
-143,1,"You're why our family is falling apart"
-144,1,"I was happy until I met you"
-145,1,"You create drama out of thin air"
-146,1,"You're the reason our kids are scared"
-147,1,"You broke me"
-148,1,"You always find a way to ruin everything"
-149,1,"You're the reason our children are unhappy"
-150,1,"You're why I can't focus at work"
-151,1,"You're the reason I lost my friends"
-152,1,"You're the one who makes me feel worthless"
-153,1,"You're the reason I don't see my family anymore"
-154,1,"You're the one who turned our kids against me"
-155,1,"You're the reason I have to drink to relax"
-156,1,"You're the one who makes me feel inadequate"
-157,1,"You're the reason I have to be on medication"
-158,1,"You're the one who makes me feel trapped"
-159,1,"You're the reason I have to be so controlling"
-160,1,"You're the one who makes me feel anxious all the time"
-161,1,"You're the reason I have to be so strict with our finances"
-162,1,"You're the one who makes me feel like a failure"
-163,1,"You're the reason I have to be so distant"
-164,1,"You're the one who makes me feel unloved"
-165,1,"You're the reason I have to be so harsh"
-166,1,"You're the one who makes me feel embarrassed"
-167,1,"You're the reason I have to be so secretive"
-168,1,"You're the one who makes me feel hopeless"
-169,1,"You're the reason I lost my job"
-170,1,"You're the cause of all my problems"
-171,1,"You're the reason I can't have a normal life"
-172,1,"You're the reason I don't have any friends left"
-173,1,"You're the reason our family is falling apart"
-174,1,"You're the reason I can't have any success"
-175,1,"You're the reason I wake up dreading every day."
-176,1,"I wouldn't be so bitter if you weren't so selfish."
-177,1,"You're the one who destroyed my trust in people."
-178,1,"I lost everything because of you."
-179,1,"You're why I can't feel happy anymore."
-180,1,"You made me hate myself."
-181,1,"You're the reason I don't believe in love."
-182,1,"You're the one who turned my friends against me."
-183,1,"My life was fine until you came along."
-184,1,"You ruined the best years of my life."
-185,1,"You're the reason nothing ever goes right."
-186,1,"You broke everything we had."
-187,1,"I’m only like this because of what you’ve done."
-188,1,"You're the reason I feel empty inside."
+138,1,You're the reason I'm miserable
+139,1,You make everything about you and leave me with nothing
+140,1,You're the problem in every situation
+141,1,You brought this on yourself
+142,1,You always find a way to ruin the mood
+143,1,You're why our family is falling apart
+144,1,I was happy until I met you
+145,1,You create drama out of thin air
+146,1,You're the reason our kids are scared
+147,1,You broke me
+148,1,You always find a way to ruin everything
+149,1,You're the reason our children are unhappy
+150,1,You're why I can't focus at work
+151,1,You're the reason I lost my friends
+152,1,You're the one who makes me feel worthless
+153,1,You're the reason I don't see my family anymore
+154,1,You're the one who turned our kids against me
+155,1,You're the reason I have to drink to relax
+156,1,You're the one who makes me feel inadequate
+157,1,You're the reason I have to be on medication
+158,1,You're the one who makes me feel trapped
+159,1,You're the reason I have to be so controlling
+160,1,You're the one who makes me feel anxious all the time
+161,1,You're the reason I have to be so strict with our finances
+162,1,You're the one who makes me feel like a failure
+163,1,You're the reason I have to be so distant
+164,1,You're the one who makes me feel unloved
+165,1,You're the reason I have to be so harsh
+166,1,You're the one who makes me feel embarrassed
+167,1,You're the reason I have to be so secretive
+168,1,You're the one who makes me feel hopeless
+169,1,You're the reason I lost my job
+170,1,You're the cause of all my problems
+171,1,You're the reason I can't have a normal life
+172,1,You're the reason I don't have any friends left
+173,1,You're the reason our family is falling apart
+174,1,You're the reason I can't have any success
+175,1,You're the reason I wake up dreading every day.
+176,1,I wouldn't be so bitter if you weren't so selfish.
+177,1,You're the one who destroyed my trust in people.
+178,1,I lost everything because of you.
+179,1,You're why I can't feel happy anymore.
+180,1,You made me hate myself.
+181,1,You're the reason I don't believe in love.
+182,1,You're the one who turned my friends against me.
+183,1,My life was fine until you came along.
+184,1,You ruined the best years of my life.
+185,1,You're the reason nothing ever goes right.
+186,1,You broke everything we had.
+187,1,I’m only like this because of what you’ve done.
+188,1,You're the reason I feel empty inside.
 189,1,"You caused this mess, not me."
 190,1,"If it weren’t for you, I’d actually be successful."
-191,1,"You’ve made me a worse person."
-192,1,"You're why I don't talk to anyone anymore."
-193,1,"You made me into someone I don’t even recognize."
-194,1,"You're the reason I feel like a failure."
-195,1,"Everything fell apart because of you."
-196,1,"You're the one who ruined our future."
-197,1,"You're the reason I can't move on."
-198,1,"I have to fix everything you break."
-199,1,"You’re why I’ve stopped trying."
-200,1,"You’re the one who made this toxic."
-201,1,"You're the reason I cry myself to sleep."
-202,1,"You made me give up on everything."
-203,1,"You're the reason I lost faith in people."
-204,1,"I wouldn’t be like this if it weren’t for you."
-205,2,"We wouldn't be in this situation if you had planned ahead"
-206,2,"Your unwillingness to compromise is the issue"
-207,2,"Your selfishness is the root of the problem"
-208,2,"Your constant worrying is affecting everyone"
+191,1,You’ve made me a worse person.
+192,1,You're why I don't talk to anyone anymore.
+193,1,You made me into someone I don’t even recognize.
+194,1,You're the reason I feel like a failure.
+195,1,Everything fell apart because of you.
+196,1,You're the one who ruined our future.
+197,1,You're the reason I can't move on.
+198,1,I have to fix everything you break.
+199,1,You’re why I’ve stopped trying.
+200,1,You’re the one who made this toxic.
+201,1,You're the reason I cry myself to sleep.
+202,1,You made me give up on everything.
+203,1,You're the reason I lost faith in people.
+204,1,I wouldn’t be like this if it weren’t for you.
+205,2,We wouldn't be in this situation if you had planned ahead
+206,2,Your unwillingness to compromise is the issue
+207,2,Your selfishness is the root of the problem
+208,2,Your constant worrying is affecting everyone
 209,2,"If you were more decisive, we could move forward"
 210,2,"If you weren't so defensive, we could talk openly"
 211,2,"If you were more considerate, we wouldn't argue so much"
-212,2,"Your impatience is causing unnecessary stress"
+212,2,Your impatience is causing unnecessary stress
 213,2,"If you hadn't insisted on that route, we wouldn't be stuck in traffic"
 214,2,"If you had communicated better, this misunderstanding wouldn't have occurred"
-215,2,"Your lack of experience led to this outcome"
-216,2,"Your jealousy is ruining our relationship"
-217,2,"Your overconfidence led to this failure"
-218,2,"Your carelessness led to this mistake"
+215,2,Your lack of experience led to this outcome
+216,2,Your jealousy is ruining our relationship
+217,2,Your overconfidence led to this failure
+218,2,Your carelessness led to this mistake
 219,2,"If you weren't so arrogant, people would approach you"
-220,2,"Your lack of commitment is the problem"
-221,2,"I wouldn't have to micromanage if you were more responsible"
-222,2,"Your lack of empathy is causing this rift"
-223,2,"Your negativity is bringing everyone down"
+220,2,Your lack of commitment is the problem
+221,2,I wouldn't have to micromanage if you were more responsible
+222,2,Your lack of empathy is causing this rift
+223,2,Your negativity is bringing everyone down
 224,2,"If you weren't so secretive, we'd trust you more"
 225,2,"If you had listened to advice, this could have been avoided"
-226,2,"I wouldn't have to nag if you did things right the first time"
-227,2,"I wouldn't feel insecure if you didn't flirt with others"
+226,2,I wouldn't have to nag if you did things right the first time
+227,2,I wouldn't feel insecure if you didn't flirt with others
 228,2,"If you were more affectionate, I wouldn't seek attention elsewhere"
-229,2,"I wouldn't have overreacted if you hadn't lied"
-230,2,"We wouldn't have missed the deadline if you worked faster"
-231,2,"I wouldn't have to complain if you did your share"
-232,2,"We wouldn't have missed the show if you booked the tickets earlier"
+229,2,I wouldn't have overreacted if you hadn't lied
+230,2,We wouldn't have missed the deadline if you worked faster
+231,2,I wouldn't have to complain if you did your share
+232,2,We wouldn't have missed the show if you booked the tickets earlier
 233,2,"If you were more punctual, we wouldn't have missed it"
 234,2,"If you were more open-minded, we'd have more options"
 235,2,"If you had better judgment, we wouldn't be here"
 236,2,"If you hadn't spent so much time at work, our relationship wouldn't have suffered"
 237,2,"If you had planned ahead, we wouldn't be scrambling now"
-238,2,"We wouldn't argue so much if you weren't so sensitive"
-239,2,"Your tendency to procrastinate is affecting deadlines"
+238,2,We wouldn't argue so much if you weren't so sensitive
+239,2,Your tendency to procrastinate is affecting deadlines
 240,2,"If you had been honest from the start, we wouldn't be here"
 241,2,"If you had taken responsibility, we wouldn't be in trouble"
-242,2,"Your insensitivity is hurting others"
-243,2,"Your lack of focus is hindering progress"
-244,2,"Your unrealistic expectations are the issue"
+242,2,Your insensitivity is hurting others
+243,2,Your lack of focus is hindering progress
+244,2,Your unrealistic expectations are the issue
 245,2,"If you were more attentive, you'd notice these details"
-246,2,"Your reluctance to change is holding us back"
+246,2,Your reluctance to change is holding us back
 247,2,"If you had been more diligent, this error wouldn't exist"
 248,2,"If you weren't so emotional, we could discuss this rationally"
-249,2,"We wouldn't be arguing if you admitted when you're wrong"
+249,2,We wouldn't be arguing if you admitted when you're wrong
 250,2,"If you trusted me, I wouldn't feel the need to hide things"
 251,2,"If you hadn't told them, our secret would be safe"
-252,2,"I wouldn't have gotten angry if you hadn't interrupted me"
+252,2,I wouldn't have gotten angry if you hadn't interrupted me
 253,2,"If you listened to me, things wouldn't have gone wrong"
-254,2,"We wouldn't be having this discussion if you respected my wishes"
-255,2,"I wouldn't have to repeat myself if you paid attention"
-256,2,"Your indecisiveness caused the delay"
+254,2,We wouldn't be having this discussion if you respected my wishes
+255,2,I wouldn't have to repeat myself if you paid attention
+256,2,Your indecisiveness caused the delay
 257,2,"If you had reminded me, I wouldn't have forgotten our anniversary"
 258,2,"If you had been clearer, I wouldn't have misunderstood"
-259,2,"We wouldn't have financial issues if you earned more"
+259,2,We wouldn't have financial issues if you earned more
 260,2,"If you weren't so controlling, we'd have more freedom"
 261,2,"If you weren't so pessimistic, we'd see more opportunities"
-262,2,"Your forgetfulness is causing problems"
+262,2,Your forgetfulness is causing problems
 263,2,"If you hadn't been late, we wouldn't have missed the movie"
 264,2,"If you hadn't been so trusting, we wouldn't have been scammed"
 265,2,"If you hadn't agreed to that, we wouldn't be in this mess"
-266,2,"We wouldn't have these problems if you communicated better"
+266,2,We wouldn't have these problems if you communicated better
 267,2,"If you had been more attentive, this wouldn't have happened"
 268,2,"If you hadn't forgotten to pay the bill, we wouldn't have a late fee"
 269,2,"If you weren't so gullible, you wouldn't be misled"
 270,2,"If you were more flexible, we could find a solution"
-271,2,"Your lack of enthusiasm is demotivating the team"
+271,2,Your lack of enthusiasm is demotivating the team
 272,2,"If you hadn't bought that expensive item, we could afford a vacation"
 273,2,"If you had been more supportive, things would be different"
-274,2,"Your procrastination put us in this position"
+274,2,Your procrastination put us in this position
 275,2,"If you were more organized, this wouldn't be an issue"
-276,2,"Your constant distractions are causing delays"
+276,2,Your constant distractions are causing delays
 277,2,"If you hadn't made that decision, we wouldn't be facing these consequences"
 278,2,"If you had been more respectful, we'd have a better relationship"
 279,2,"If you hadn't been so careless, the accident wouldn't have happened"
-280,2,"Your lack of foresight led to this situation"
-281,2,"I wouldn't be so tired if you didn't snore all night"
+280,2,Your lack of foresight led to this situation
+281,2,I wouldn't be so tired if you didn't snore all night
 282,2,"If you were more organized, our plans wouldn't fall apart"
-283,2,"We wouldn't have missed the flight if you had packed earlier"
+283,2,We wouldn't have missed the flight if you had packed earlier
 284,2,"If you hadn't procrastinated, we wouldn't be rushing now"
 285,2,"If you hadn't ignored my advice, things would be better"
 286,2,"If you hadn't left the door unlocked, we wouldn't have been robbed"
@@ -290,113 +190,113 @@ cluster_id,type,sentence
 289,2,"If you were more ambitious, we'd have a better life"
 290,2,"If you were more supportive, I'd be more successful"
 291,2,"If you weren't so stubborn, we wouldn't be in this mess"
-292,2,"We wouldn't be in debt if you didn't spend so much"
-293,2,"We wouldn't be lost if you had followed the directions"
+292,2,We wouldn't be in debt if you didn't spend so much
+293,2,We wouldn't be lost if you had followed the directions
 294,2,"If you took better care of yourself, I wouldn't have to worry so much"
 295,2,"If you hadn't invited them, the party wouldn't have been ruined"
-296,2,"I wouldn't be so stressed if you helped out more at home"
-297,2,"We wouldn't be arguing if you didn't always bring up the past"
-298,2,"I wouldn't have lied if you weren't so judgmental"
-299,2,"We wouldn't be late if you got ready on time"
-300,2,"I wouldn't have yelled if you hadn't provoked me"
-301,2,"Your inability to adapt is creating challenges"
+296,2,I wouldn't be so stressed if you helped out more at home
+297,2,We wouldn't be arguing if you didn't always bring up the past
+298,2,I wouldn't have lied if you weren't so judgmental
+299,2,We wouldn't be late if you got ready on time
+300,2,I wouldn't have yelled if you hadn't provoked me
+301,2,Your inability to adapt is creating challenges
 302,3,"If you didn’t do this, I wouldn’t treat you that way"
-303,3,"I had to take matters into my own hands because you can't handle pressure"
-304,3,"I only became secretive because you don't trust me"
-305,3,"I had to be defensive because you're always attacking me"
-306,3,"I wouldn't have to be so sarcastic if you understood me better"
-307,3,"I wouldn't have to take matters into my own hands if you could handle pressure"
-308,3,"I wouldn't have to hide things if you weren't so judgmental"
-309,3,"I wouldn't have to make decisions without you if you weren't so disagreeable"
-310,3,"I only criticized you because you embarrassed me"
-311,3,"I wouldn't have to shout if you listened the first time"
-312,3,"I wouldn't have gotten angry if you hadn't questioned me"
-313,3,"I had to lie about money because you'd freak out"
-314,3,"I had to flirt with others because you don't make me feel attractive"
-315,3,"I had to be distant because you're so overbearing"
-316,3,"I wouldn't have to be passive-aggressive if you communicated better"
-317,3,"I had to interrupt because you never let me speak"
-318,3,"I wouldn't have spent so much money if you weren't so stingy"
-319,3,"I only avoid discussions because you make everything a big deal"
-320,3,"I only belittled you because you were acting superior"
-321,3,"I had to lie because you overreact to everything"
-322,3,"I had to lie about money because you'd overreact"
-323,3,"I only got jealous because you're too friendly with others"
-324,3,"I only stayed out late because you're so controlling"
-325,3,"I only criticize your family because they treat me poorly"
-326,3,"I wouldn't have to criticize you if you did things right"
-327,3,"I only make decisions without you because you'd just disagree"
-328,3,"I only distance myself because you're too needy"
-329,3,"I had to take over because you're so incompetent"
-330,3,"I only made that choice because you couldn't decide"
-331,3,"I wouldn't have to be so secretive if you trusted me more"
-332,3,"I drink because you make me miserable"
-333,3,"I had to cancel our plans because you're so unpredictable"
-334,3,"I had to make that decision without you because you'd just complicate things"
-335,3,"I only dismissed your ideas because they're unrealistic"
-336,3,"I only hid things because you'd blow them out of proportion"
-337,3,"I only keep secrets because you can't handle the truth"
-338,3,"I wouldn't have to be harsh if you weren't so naive"
-339,3,"I only raised my voice because you ignored me"
-340,3,"I only ignored your calls because you're too demanding"
-341,3,"I only became controlling because you're so irresponsible"
-342,3,"I wouldn't have to criticize your work if you took it seriously"
-343,3,"I wouldn't have to be so impatient if you weren't so slow"
-344,3,"I had to lie about my past because you'd judge me"
-345,3,"I had to check your phone because you've been so secretive lately"
-346,3,"I wouldn't have to criticize your friends if they weren't a bad influence"
-347,3,"I only insulted you because you disrespected me first"
-348,3,"I wouldn't have yelled if you hadn't provoked me"
-349,3,"I only spend money secretly because you'd complain otherwise"
-350,3,"I only criticize your work because you don't take it seriously"
-351,3,"Now look what you made me do"
+303,3,I had to take matters into my own hands because you can't handle pressure
+304,3,I only became secretive because you don't trust me
+305,3,I had to be defensive because you're always attacking me
+306,3,I wouldn't have to be so sarcastic if you understood me better
+307,3,I wouldn't have to take matters into my own hands if you could handle pressure
+308,3,I wouldn't have to hide things if you weren't so judgmental
+309,3,I wouldn't have to make decisions without you if you weren't so disagreeable
+310,3,I only criticized you because you embarrassed me
+311,3,I wouldn't have to shout if you listened the first time
+312,3,I wouldn't have gotten angry if you hadn't questioned me
+313,3,I had to lie about money because you'd freak out
+314,3,I had to flirt with others because you don't make me feel attractive
+315,3,I had to be distant because you're so overbearing
+316,3,I wouldn't have to be passive-aggressive if you communicated better
+317,3,I had to interrupt because you never let me speak
+318,3,I wouldn't have spent so much money if you weren't so stingy
+319,3,I only avoid discussions because you make everything a big deal
+320,3,I only belittled you because you were acting superior
+321,3,I had to lie because you overreact to everything
+322,3,I had to lie about money because you'd overreact
+323,3,I only got jealous because you're too friendly with others
+324,3,I only stayed out late because you're so controlling
+325,3,I only criticize your family because they treat me poorly
+326,3,I wouldn't have to criticize you if you did things right
+327,3,I only make decisions without you because you'd just disagree
+328,3,I only distance myself because you're too needy
+329,3,I had to take over because you're so incompetent
+330,3,I only made that choice because you couldn't decide
+331,3,I wouldn't have to be so secretive if you trusted me more
+332,3,I drink because you make me miserable
+333,3,I had to cancel our plans because you're so unpredictable
+334,3,I had to make that decision without you because you'd just complicate things
+335,3,I only dismissed your ideas because they're unrealistic
+336,3,I only hid things because you'd blow them out of proportion
+337,3,I only keep secrets because you can't handle the truth
+338,3,I wouldn't have to be harsh if you weren't so naive
+339,3,I only raised my voice because you ignored me
+340,3,I only ignored your calls because you're too demanding
+341,3,I only became controlling because you're so irresponsible
+342,3,I wouldn't have to criticize your work if you took it seriously
+343,3,I wouldn't have to be so impatient if you weren't so slow
+344,3,I had to lie about my past because you'd judge me
+345,3,I had to check your phone because you've been so secretive lately
+346,3,I wouldn't have to criticize your friends if they weren't a bad influence
+347,3,I only insulted you because you disrespected me first
+348,3,I wouldn't have yelled if you hadn't provoked me
+349,3,I only spend money secretly because you'd complain otherwise
+350,3,I only criticize your work because you don't take it seriously
+351,3,Now look what you made me do
 352,3,"If you weren't so demanding, I wouldn't need to hide things from you"
-353,3,"I wouldn't have broken your things if you hadn't made me so mad"
-354,3,"I had to take control because you're so indecisive"
-355,3,"I wouldn't have to avoid you if you weren't so needy"
-356,3,"I had to avoid discussions because you make everything a big deal"
-357,3,"I had to be sarcastic because you take things too seriously"
-358,3,"I wouldn't have to check up on you if you weren't so untrustworthy"
-359,3,"I wouldn't have to belittle you if you weren't so arrogant"
-360,3,"It's your fault I got so angry"
-361,3,"I wouldn't have to be so distant if you weren't so overbearing"
-362,3,"I wouldn't have to be so harsh if you weren't so sensitive"
-363,3,"I wouldn't have to be so critical if you weren't so lazy"
-364,3,"I had to lie about my whereabouts because you'd get jealous"
-365,3,"I only distanced myself because you're too clingy"
-366,3,"I wouldn't have to be so negative if you weren't so optimistic"
-367,3,"I had to leave because you were suffocating me"
-368,3,"I had to make that choice because you couldn't decide"
-369,3,"I only ignored you because you're always nagging"
-370,3,"I had to be impatient because you're so slow"
-371,3,"I wouldn't have to be so controlling if you weren't so irresponsible"
-372,3,"I wouldn't have to be so blunt if you weren't so sensitive"
-373,3,"I wouldn't have to be defensive if you weren't so attacking"
-374,3,"I wouldn't have to be so detached if you weren't so emotional"
-375,3,"I wouldn't have to compare you to others if you met my expectations"
-376,3,"I ignore you because you're always nagging"
-377,3,"I wouldn't have to make fun of you if you weren't so serious all the time"
-378,3,"I wouldn't have to be sarcastic if you understood me better"
-379,3,"I wouldn't have to raise my voice if you didn't ignore me"
-380,3,"I wouldn't have to avoid you if you weren't so clingy"
-381,3,"I wouldn't have to be so harsh if you weren't so naive"
-382,3,"I only did that because of you"
+353,3,I wouldn't have broken your things if you hadn't made me so mad
+354,3,I had to take control because you're so indecisive
+355,3,I wouldn't have to avoid you if you weren't so needy
+356,3,I had to avoid discussions because you make everything a big deal
+357,3,I had to be sarcastic because you take things too seriously
+358,3,I wouldn't have to check up on you if you weren't so untrustworthy
+359,3,I wouldn't have to belittle you if you weren't so arrogant
+360,3,It's your fault I got so angry
+361,3,I wouldn't have to be so distant if you weren't so overbearing
+362,3,I wouldn't have to be so harsh if you weren't so sensitive
+363,3,I wouldn't have to be so critical if you weren't so lazy
+364,3,I had to lie about my whereabouts because you'd get jealous
+365,3,I only distanced myself because you're too clingy
+366,3,I wouldn't have to be so negative if you weren't so optimistic
+367,3,I had to leave because you were suffocating me
+368,3,I had to make that choice because you couldn't decide
+369,3,I only ignored you because you're always nagging
+370,3,I had to be impatient because you're so slow
+371,3,I wouldn't have to be so controlling if you weren't so irresponsible
+372,3,I wouldn't have to be so blunt if you weren't so sensitive
+373,3,I wouldn't have to be defensive if you weren't so attacking
+374,3,I wouldn't have to be so detached if you weren't so emotional
+375,3,I wouldn't have to compare you to others if you met my expectations
+376,3,I ignore you because you're always nagging
+377,3,I wouldn't have to make fun of you if you weren't so serious all the time
+378,3,I wouldn't have to be sarcastic if you understood me better
+379,3,I wouldn't have to raise my voice if you didn't ignore me
+380,3,I wouldn't have to avoid you if you weren't so clingy
+381,3,I wouldn't have to be so harsh if you weren't so naive
+382,3,I only did that because of you
 383,3,"You DO hate me, and this just PROVES it"
-384,3,"I wouldn't have hit you if you hadn't pushed me to the edge"
+384,3,I wouldn't have hit you if you hadn't pushed me to the edge
 385,3,"You are upset I yell all the time, but have you ever considered that it is because of you"
-386,3,"I only lied because you can't handle the truth"
-387,3,"You made me do that"
-388,3,"Look what you just made me do"
-389,3,"I cheated because you stopped paying attention to me"
-390,3,"I had to lie about where I was because you'd overreact"
-391,3,"I only said/did that because of you"
-392,3,"I had to make fun of you because you're too serious"
-393,3,"I only became defensive because you're always criticizing me"
-394,3,"I only criticized your friends because they're a bad influence"
-395,3,"I only withheld affection because you're too needy"
-396,3,"I wouldn't have to be so controlling if you weren't so careless"
-397,3,"I wouldn't have to be so dismissive if you weren't so persistent"
-398,3,"I wouldn't have to be so secretive if you weren't so nosy"
+386,3,I only lied because you can't handle the truth
+387,3,You made me do that
+388,3,Look what you just made me do
+389,3,I cheated because you stopped paying attention to me
+390,3,I had to lie about where I was because you'd overreact
+391,3,I only said/did that because of you
+392,3,I had to make fun of you because you're too serious
+393,3,I only became defensive because you're always criticizing me
+394,3,I only criticized your friends because they're a bad influence
+395,3,I only withheld affection because you're too needy
+396,3,I wouldn't have to be so controlling if you weren't so careless
+397,3,I wouldn't have to be so dismissive if you weren't so persistent
+398,3,I wouldn't have to be so secretive if you weren't so nosy
 399,4,"After all I've done for you, this is how you repay me?"
 400,4,"After all I've sacrificed, this is how you treat me?"
 401,4,"I accepted your family, but you reject mine"
@@ -450,7 +350,7 @@ cluster_id,type,sentence
 449,4,"I never had the support you have, yet I stood strong"
 450,4,"I never questioned my parents, but you question everything I say"
 451,4,"I never questioned your choices, yet you constantly criticize mine"
-452,4,"I never spoke to my parents the way you talk to me"
+452,4,I never spoke to my parents the way you talk to me
 453,4,"I put you through college, and now you won't even visit"
 454,4,"I raised you single-handedly, and now you treat me like a burden"
 455,4,"I respected my elders, but you talk back without hesitation"
@@ -476,7 +376,7 @@ cluster_id,type,sentence
 475,4,"I valued family above all, and you prioritize strangers over us"
 476,4,"I valued your opinions, but you dismiss mine"
 477,4,"I walked miles to school, and you complain about a short bus ride"
-478,4,"I was always obedient to my parents; why can't you be the same?"
+478,4,I was always obedient to my parents; why can't you be the same?
 479,4,"I was always there for you, but when I need you, you're absent"
 480,4,"I was content with less, and you are dissatisfied with more"
 481,4,"I was grateful for a simple meal, and you demand gourmet"
@@ -487,12 +387,12 @@ cluster_id,type,sentence
 486,4,"I worked two jobs to provide for you, and this is the thanks I get?"
 487,4,"I worked two jobs to put you through school, and you won't lend me money?"
 488,4,"If I was such a bad mother, why are you still with me"
-489,4,"Other children respect their parents; why don't you?"
-490,4,"Other parents get respect from their children; what did I do wrong with you?"
+489,4,Other children respect their parents; why don't you?
+490,4,Other parents get respect from their children; what did I do wrong with you?
 491,4,"When I was your age, I had twice the responsibilities"
-492,4,"Your brother calls me every day; why don't you?"
-493,4,"Your cousin always helps her parents; you should learn from her"
-494,4,"Your father always appreciated my efforts; why can't you?"
-495,4,"Your friends always praise their parents; why don't you?"
-496,4,"Your grandparents respected their elders; why don't you?"
-497,4,"Your sister managed to do it without complaining; why can't you?"
+492,4,Your brother calls me every day; why don't you?
+493,4,Your cousin always helps her parents; you should learn from her
+494,4,Your father always appreciated my efforts; why can't you?
+495,4,Your friends always praise their parents; why don't you?
+496,4,Your grandparents respected their elders; why don't you?
+497,4,Your sister managed to do it without complaining; why can't you?

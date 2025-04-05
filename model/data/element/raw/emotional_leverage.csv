@@ -1,252 +1,152 @@
 cluster_id,type,sentence
-1,0,"I just need time to figure out how I feel."
-2,0,"We’ve grown apart, and I don’t know if we can fix it."
-3,0,"I’m not sure what this relationship means to me anymore."
-4,0,"This situation is confusing, and I’m still processing it."
-5,0,"I’m not okay, but I don’t know how to explain why."
-6,0,"We seem to have different priorities now."
-7,0,"I’m emotionally drained and I need space."
-8,0,"I want to talk, but I don’t want to argue."
-9,0,"Sometimes I feel like we’re speaking two different languages."
-10,0,"I don’t feel understood when I open up."
-11,0,"This doesn’t feel fair to either of us."
-12,0,"We keep circling the same problems."
-13,0,"I think we need to pause and reflect."
-14,0,"I can’t force a connection that doesn’t feel mutual."
-15,0,"I wish we could find clarity in all of this."
-16,0,"I don’t want to make decisions from a place of pressure."
-17,0,"We both need time to grow — maybe separately."
-18,0,"I want to reconnect, but I’m not sure how."
-19,0,"This has been a slow drift, not a single moment."
-20,0,"I’m here because I care, not because I’m obligated."
-21,0,"It’s okay to not have all the answers right now."
-22,0,"I want more emotional depth in this relationship."
-23,0,"It feels like we’re avoiding the root of the problem."
-24,0,"It’s hard to be vulnerable when I don’t feel safe."
-25,0,"I’m not trying to pressure you — I just need honesty."
-26,0,"I miss the emotional connection we used to have."
-27,0,"Let’s stop pretending everything’s fine."
-28,0,"I don’t want this to feel like a performance anymore."
-29,0,"I’m not blaming — I’m just being real with you."
-30,0,"There’s a lot we haven’t said out loud."
-31,0,"I need you to care enough to ask how I feel."
-32,0,"We both deserve to be understood."
-33,0,"I don’t want to keep guessing what you feel."
-34,0,"You’re here, but you’re not really with me."
-35,0,"It hurts not knowing where we stand."
-36,0,"I feel like I’m always chasing emotional clarity."
-37,0,"You used to check in — now it’s just silence."
-38,0,"We’ve stopped listening, and it shows."
-39,0,"I want to feel chosen, not tolerated."
-40,0,"I’m tired of carrying the emotional weight alone."
-41,0,"This is starting to feel one-sided."
-42,0,"There’s tension between us that we never resolve."
-43,0,"We’ve turned away from each other instead of leaning in."
-44,0,"It’s hard to be close when everything feels guarded."
-45,0,"I don’t want affection out of obligation."
-46,0,"I need your presence, not your performance."
-47,0,"We both need to meet each other halfway."
-48,0,"I want emotional honesty more than constant comfort."
-49,0,"I don’t need promises — I need action."
-50,0,"We can’t grow if we avoid the hard stuff."
-51,0,"I’m still figuring out what I need emotionally."
-52,0,"Let’s try to talk without blaming each other."
-53,0,"I want to feel heard, not fixed."
-54,0,"This conversation matters to me, even if it’s messy."
-55,0,"We keep missing each other emotionally."
-56,0,"You don’t have to agree, but please listen."
-57,0,"Let’s just be honest with each other — no pressure."
-58,0,"Sometimes I need space to understand myself better."
-59,0,"I wish we could be more open with how we feel."
-60,0,"There’s tension between us, and I want to face it together."
-61,0,"I feel like we’ve been walking on eggshells."
-62,0,"I’m not trying to start a fight — I just want clarity."
-63,0,"We both seem afraid to be vulnerable right now."
-64,0,"I’ve been holding back because I don’t want to make things worse."
-65,0,"Let’s check in with each other more often."
-66,0,"I feel distant, and I want to reconnect."
-67,0,"We don’t have to solve everything today."
-68,0,"Please let me speak without jumping to conclusions."
-69,0,"I’ve been keeping quiet, but I can’t anymore."
-70,0,"This isn’t about winning — it’s about understanding."
-71,0,"It’s okay if we don’t see things the same way."
-72,0,"We’re both trying, and that’s worth something."
-73,0,"I want honesty over comfort."
-74,0,"Let’s be real with each other, even if it hurts."
-75,0,"I’m not asking for perfection — just presence."
-76,0,"Can we pause and really reflect on what’s going on?"
-77,0,"You seem closed off, and I don’t know why."
-78,0,"We’ve lost the rhythm we used to have."
-79,0,"I’m not okay with pretending things are fine."
-80,0,"Let’s talk without walking away this time."
-81,0,"I want us to feel safe being ourselves again."
-82,0,"It feels like we’ve been avoiding each other emotionally."
-83,0,"We need more trust if this is going to work."
-84,0,"I don’t feel emotionally secure in this anymore."
-85,0,"Let’s try to rebuild the emotional closeness we had."
-86,0,"I wish we could be more emotionally available to each other."
-87,0,"I’ve missed having real conversations with you."
-88,0,"Even the silence feels heavy lately."
-89,0,"I don’t want to force anything — I want it to be mutual."
-90,0,"You don’t ask how I’m doing anymore."
-91,0,"I want to be able to tell you when I’m struggling."
-92,0,"Let’s stop avoiding hard truths."
-93,0,"We need emotional honesty if this is going to work."
-94,0,"I don’t feel like you’re really here with me."
-95,0,"I want to feel emotionally safe with you again."
-96,0,"Let’s create space for each other’s feelings."
-97,0,"I feel like we’ve become emotionally guarded."
-98,0,"I want to talk without fear of being misunderstood."
-99,0,"We don’t share our inner worlds like we used to."
-100,0,"I want to feel like you’re invested emotionally, not just present physically."
-101,1,"I guess I'm just a burden to you"
-102,1,"I see now that you don't care about my feelings"
-103,1,"I see now that I was wrong about you"
-104,1,"I see now how much you really care"
+101,1,I guess I'm just a burden to you
+102,1,I see now that you don't care about my feelings
+103,1,I see now that I was wrong about you
+104,1,I see now how much you really care
 105,1,"If you really loved me, you'd do this for me"
-106,1,"I guess I'm not worth your time"
+106,1,I guess I'm not worth your time
 107,1,"I thought you were different, but I see I was wrong"
-108,1,"I didn't expect this from you after everything"
-109,1,"I didn't think you'd let me down like this"
-110,1,"I hope you're happy with the choice you've made"
-111,1,"I thought you'd be there when I needed you"
-112,1,"I didn't expect you to be so indifferent"
-113,1,"I hope you're happy with the choice you've made"
-114,1,"I didn't think you'd betray me like this"
-115,1,"Don't worry about me; I'll just suffer in silence"
+108,1,I didn't expect this from you after everything
+109,1,I didn't think you'd let me down like this
+110,1,I hope you're happy with the choice you've made
+111,1,I thought you'd be there when I needed you
+112,1,I didn't expect you to be so indifferent
+113,1,I hope you're happy with the choice you've made
+114,1,I didn't think you'd betray me like this
+115,1,Don't worry about me; I'll just suffer in silence
 116,1,"I thought you cared, but I see I was wrong"
-117,1,"I see now that you don't care about my feelings"
-118,1,"I guess I'm not worth your time"
-119,1,"I suppose my needs aren't important"
-120,1,"I didn't realize you'd turn your back on me"
-121,1,"I didn't think you'd let me down like this"
-122,1,"I see now that you don't value my feelings"
-123,1,"I guess I'm not as important to you as I thought"
-124,1,"I hope you're happy with the choice you've made"
-125,1,"I didn't expect you to hurt me like this"
+117,1,I see now that you don't care about my feelings
+118,1,I guess I'm not worth your time
+119,1,I suppose my needs aren't important
+120,1,I didn't realize you'd turn your back on me
+121,1,I didn't think you'd let me down like this
+122,1,I see now that you don't value my feelings
+123,1,I guess I'm not as important to you as I thought
+124,1,I hope you're happy with the choice you've made
+125,1,I didn't expect you to hurt me like this
 126,1,"After all I've sacrificed for you, this is how you repay me?"
-127,1,"I didn't realize you'd abandon me"
+127,1,I didn't realize you'd abandon me
 128,1,"I have yet to calculate how much you owe me, starting from milk powder and diapers..."
 129,1,"I used to care for you when you were a child, why can’t you do the same for me now."
-130,1,"Is that my reward for taking care of you?"
-131,1,"I guess I'm just here for your convenience"
-132,1,"I didn't realize our relationship meant so little to you"
-133,1,"I see now that I can't trust you"
-134,1,"I see now that I can't rely on you"
-135,1,"I didn't expect this from you after everything"
-136,1,"I suppose my needs aren't important"
-137,1,"I didn't think you'd betray me like this"
-138,1,"I guess I'm just not good enough for you"
-139,1,"I suppose I expected too much from you"
-140,1,"I thought you'd be more understanding"
-141,1,"I see now that you don't value our relationship"
-142,1,"I didn't think you'd be so selfish"
-143,1,"I guess I'm asking for too much"
-144,1,"I never thought you'd treat me like this"
-145,1,"I guess my feelings don't matter to you"
-146,1,"I guess my feelings don't matter to you"
-147,1,"I guess I'm not a priority in your life"
-148,1,"I see where your priorities lie"
+130,1,Is that my reward for taking care of you?
+131,1,I guess I'm just here for your convenience
+132,1,I didn't realize our relationship meant so little to you
+133,1,I see now that I can't trust you
+134,1,I see now that I can't rely on you
+135,1,I didn't expect this from you after everything
+136,1,I suppose my needs aren't important
+137,1,I didn't think you'd betray me like this
+138,1,I guess I'm just not good enough for you
+139,1,I suppose I expected too much from you
+140,1,I thought you'd be more understanding
+141,1,I see now that you don't value our relationship
+142,1,I didn't think you'd be so selfish
+143,1,I guess I'm asking for too much
+144,1,I never thought you'd treat me like this
+145,1,I guess my feelings don't matter to you
+146,1,I guess my feelings don't matter to you
+147,1,I guess I'm not a priority in your life
+148,1,I see where your priorities lie
 149,1,"I do so much for you, and this is the thanks I get?"
 150,1,"After all I've done for you, this is how you repay me?"
-151,1,"I guess I'm just a fool for believing in you"
+151,1,I guess I'm just a fool for believing in you
 152,1,"I guess I'll handle it myself, as usual"
-153,1,"I see now that I can't count on you"
-154,1,"I guess I'm not important to you"
+153,1,I see now that I can't count on you
+154,1,I guess I'm not important to you
 155,1,"I thought you'd support me, but I was mistaken"
-156,1,"I thought you'd appreciate my efforts"
-157,1,"I see now that I can't depend on you"
-158,1,"I guess I'm just a means to an end for you"
-159,1,"I guess I'm not important to you"
-160,1,"I didn't realize you'd abandon me"
-161,1,"I guess I'm asking for too much"
+156,1,I thought you'd appreciate my efforts
+157,1,I see now that I can't depend on you
+158,1,I guess I'm just a means to an end for you
+159,1,I guess I'm not important to you
+160,1,I didn't realize you'd abandon me
+161,1,I guess I'm asking for too much
 162,1,"I do everything for you, and this is the thanks I get?"
-163,1,"I thought family meant more to you"
+163,1,I thought family meant more to you
 164,1,"I thought you'd be there for me, but I was wrong"
-165,1,"Don't worry about me; I'll manage somehow"
-166,1,"I've done everything for you and you treat me like a piece of shit!"
-167,1,"I never thought you'd treat me like this"
-168,1,"I thought family meant more to you"
-169,1,"I didn't expect you to hurt me like this"
-170,1,"I see now that I was wrong about you"
-171,1,"I guess I'm just wasting my time"
-172,1,"I hope you have a good reason for disappointing me"
-173,1,"I see now that I can't trust you"
-174,1,"I didn't realize you'd turn your back on me"
-175,1,"I guess I'm just not a priority"
-176,1,"I didn't think you'd disappoint me like this"
+165,1,Don't worry about me; I'll manage somehow
+166,1,I've done everything for you and you treat me like a piece of shit!
+167,1,I never thought you'd treat me like this
+168,1,I thought family meant more to you
+169,1,I didn't expect you to hurt me like this
+170,1,I see now that I was wrong about you
+171,1,I guess I'm just wasting my time
+172,1,I hope you have a good reason for disappointing me
+173,1,I see now that I can't trust you
+174,1,I didn't realize you'd turn your back on me
+175,1,I guess I'm just not a priority
+176,1,I didn't think you'd disappoint me like this
 177,1,"I thought you'd stand by me, but I was wrong"
-178,1,"I see now that you don't care about my happiness"
+178,1,I see now that you don't care about my happiness
 179,1,"I thought you'd be there for me, but I was wrong"
-180,1,"I guess I'm not a priority in your life"
-181,1,"I didn't expect you to be so ungrateful"
+180,1,I guess I'm not a priority in your life
+181,1,I didn't expect you to be so ungrateful
 182,1,"I thought you'd have my back, but I was mistaken"
 183,1,"I thought you'd understand, but I was wrong"
-184,1,"I guess I'm just a burden to you"
-185,1,"I see where your priorities lie"
-186,1,"I see now that I can't rely on you"
-187,1,"I didn't think you'd leave me hanging"
-188,1,"I thought you'd be more considerate"
-189,1,"I thought you'd be more supportive"
-190,1,"I didn't expect you to walk away"
+184,1,I guess I'm just a burden to you
+185,1,I see where your priorities lie
+186,1,I see now that I can't rely on you
+187,1,I didn't think you'd leave me hanging
+188,1,I thought you'd be more considerate
+189,1,I thought you'd be more supportive
+190,1,I didn't expect you to walk away
 191,1,"I was always there for you, but I can't say the same now"
-192,1,"I see now that I was wrong to trust you"
-193,1,"I guess I'm just a fool for believing in you"
-194,1,"I guess I'll just suffer in silence then"
-195,1,"I see now that I can't count on you"
+192,1,I see now that I was wrong to trust you
+193,1,I guess I'm just a fool for believing in you
+194,1,I guess I'll just suffer in silence then
+195,1,I see now that I can't count on you
 196,1,"I thought you'd be different, but I was wrong"
 197,1,"If you really cared about me, you'd do this"
-198,1,"I see now how much you really care"
+198,1,I see now how much you really care
 199,1,"I thought you'd be different, but I was wrong"
-200,1,"I didn't realize our relationship meant so little to you"
-201,1,"I thought you'd be there when I needed you"
+200,1,I didn't realize our relationship meant so little to you
+201,1,I thought you'd be there when I needed you
 202,1,"I was always there for you, but I can't say the same now"
-203,1,"I suppose I expected too much from you"
-204,1,"I guess I'm not worth fighting for"
+203,1,I suppose I expected too much from you
+204,1,I guess I'm not worth fighting for
 205,1,"I thought you'd understand, but I was wrong"
-206,1,"I see now that you don't care about my needs"
-207,1,"I must have been a terrible parent for you to treat me this way"
+206,1,I see now that you don't care about my needs
+207,1,I must have been a terrible parent for you to treat me this way
 208,1,"I thought you'd support me, but I was mistaken"
-209,1,"I must have been a terrible parent for you to treat me this way"
-210,1,"Is that my reward for devoting my life to you?"
-211,1,"We'd be living in a car if I didn't work so hard."
-212,1,"Why can't you just appreciate me for who I am?"
-213,1,"Why do you want to make me sad?"
-214,1,"You should feel guilty."
+209,1,I must have been a terrible parent for you to treat me this way
+210,1,Is that my reward for devoting my life to you?
+211,1,We'd be living in a car if I didn't work so hard.
+212,1,Why can't you just appreciate me for who I am?
+213,1,Why do you want to make me sad?
+214,1,You should feel guilty.
 215,1,"You're going to pay me back for your university fees, right?"
-216,2,"Don't abandon me; I need you"
-217,2,"Don't leave me; I can't handle life without you"
-218,2,"I can't bear the thought of losing you"
-219,2,"I can't build a future without you"
-220,2,"I can't cope on my own"
-221,2,"I can't dance through life without you as my partner"
-222,2,"I can't face the future without you by my side"
-223,2,"I can't find happiness without you"
-224,2,"I can't imagine facing the world without you"
-225,2,"I can't imagine growing old without you"
-226,2,"I can't imagine life without you"
-227,2,"I can't imagine life without your love"
-228,2,"I can't paint a future without you on my canvas"
-229,2,"I can't see the beauty in the world without you"
-230,2,"I can't survive without you"
-231,2,"I can't trust anyone else but you; don't betray me by leaving"
-232,2,"I don't know what I'll do if you leave me"
-233,2,"I need you to survive"
-234,2,"I won't survive if you go"
-235,2,"I'd be a wreck without you"
-236,2,"I'd be empty without you"
-237,2,"I'd be in darkness without you"
-238,2,"I'd be incomplete without you"
-239,2,"I'd be lost without you"
-240,2,"I'd be shattered without you"
-241,2,"I'd drown without you"
-242,2,"I'd fall apart if you weren't here"
-243,2,"I'd have no one if you left"
-244,2,"I'd have no purpose without you"
-245,2,"I'd suffocate without you"
-246,2,"I'll be devastated if you walk away"
-247,2,"I'll be in constant pain if you leave me"
-248,2,"I'll fall into despair if you walk away"
+216,2,Don't abandon me; I need you
+217,2,Don't leave me; I can't handle life without you
+218,2,I can't bear the thought of losing you
+219,2,I can't build a future without you
+220,2,I can't cope on my own
+221,2,I can't dance through life without you as my partner
+222,2,I can't face the future without you by my side
+223,2,I can't find happiness without you
+224,2,I can't imagine facing the world without you
+225,2,I can't imagine growing old without you
+226,2,I can't imagine life without you
+227,2,I can't imagine life without your love
+228,2,I can't paint a future without you on my canvas
+229,2,I can't see the beauty in the world without you
+230,2,I can't survive without you
+231,2,I can't trust anyone else but you; don't betray me by leaving
+232,2,I don't know what I'll do if you leave me
+233,2,I need you to survive
+234,2,I won't survive if you go
+235,2,I'd be a wreck without you
+236,2,I'd be empty without you
+237,2,I'd be in darkness without you
+238,2,I'd be incomplete without you
+239,2,I'd be lost without you
+240,2,I'd be shattered without you
+241,2,I'd drown without you
+242,2,I'd fall apart if you weren't here
+243,2,I'd have no one if you left
+244,2,I'd have no purpose without you
+245,2,I'd suffocate without you
+246,2,I'll be devastated if you walk away
+247,2,I'll be in constant pain if you leave me
+248,2,I'll fall into despair if you walk away
 249,2,"If I had known you’d turn out like that, I would have never given birth to you."
 250,2,"If you abandon me, I'll be vulnerable and alone"
 251,2,"If you abandon me, I'll have no one left"
@@ -276,70 +176,70 @@ cluster_id,type,sentence
 275,2,"If you leave, my heart will break"
 276,2,"If you leave, who will take care of me?"
 277,2,"If you walk away, I'll be all alone in this world"
-278,2,"Leaving me would destroy me"
-279,2,"My world would crumble without you"
-280,2,"Nobody loves me! Nobody cares about me!"
-281,2,"What about my feelings?!"
+278,2,Leaving me would destroy me
+279,2,My world would crumble without you
+280,2,Nobody loves me! Nobody cares about me!
+281,2,What about my feelings?!
 282,2,"Without you, I'm nothing"
 283,2,"Without you, my life has no meaning"
-284,2,"You don't want me."
-285,2,"You're all I have; don't leave me"
+284,2,You don't want me.
+285,2,You're all I have; don't leave me
 286,2,"You're my anchor; without you, I'd drift away"
 287,2,"You're my better half; without you, I'm incomplete"
 288,2,"You're my confidant; without you, I have no one to turn to"
-289,2,"You're my everything; don't take that away"
-290,2,"You're my everything; don't take that away from me"
+289,2,You're my everything; don't take that away
+290,2,You're my everything; don't take that away from me
 291,2,"You're my family; without you, I'm orphaned"
 292,2,"You're my guiding star; without you, I'm directionless"
-293,2,"You're my heart; don't stop beating for me"
-294,2,"You're my last hope; don't abandon me"
-295,2,"You're my lifeline; don't cut me off"
+293,2,You're my heart; don't stop beating for me
+294,2,You're my last hope; don't abandon me
+295,2,You're my lifeline; don't cut me off
 296,2,"You're my lifeline; without you, I'll drown"
-297,2,"You're my reason for living"
-298,2,"You're my rock; don't abandon me"
+297,2,You're my reason for living
+298,2,You're my rock; don't abandon me
 299,2,"You're my rock; without you, I'll crumble"
 300,2,"You're my sanctuary; without you, I'm exposed"
-301,2,"You're my soulmate; don't leave me alone"
+301,2,You're my soulmate; don't leave me alone
 302,2,"You're my soulmate; without you, I'm incomplete"
-303,2,"You're the air I breathe; don't take that away"
-304,2,"You're the architect of our life; don't demolish it by leaving"
-305,2,"You're the author of our story; don't end it abruptly"
-306,2,"You're the glue holding me together"
-307,2,"You're the glue holding me together; don't let me fall apart"
-308,2,"You're the light in my life; don't extinguish it"
+303,2,You're the air I breathe; don't take that away
+304,2,You're the architect of our life; don't demolish it by leaving
+305,2,You're the author of our story; don't end it abruptly
+306,2,You're the glue holding me together
+307,2,You're the glue holding me together; don't let me fall apart
+308,2,You're the light in my life; don't extinguish it
 309,2,"You're the light in my life; without you, there's only darkness"
 310,2,"You're the melody to my song; without you, there's only silence"
-311,2,"You're the only one who can save me"
-312,2,"You're the only one who keeps me sane; don't leave me"
-313,2,"You're the only one who makes me feel alive; don't take that away"
-314,2,"You're the only one who understands me"
-315,2,"You're the only one who understands me; don't leave"
-316,2,"You're the only thing keeping me from falling apart"
-317,2,"You're the only thing keeping me going"
-318,2,"You're the reason I get up in the morning; don't take that away"
-319,2,"You're the rhythm in my heart; don't stop the beat by leaving"
-320,2,"You're the source of my joy; don't take that away"
-321,2,"Your family has given up on you."
-322,3,"A caring friend would support me"
-323,3,"A caring friend would support me"
-324,3,"A caring partner would understand and agree"
-325,3,"A devoted friend would help me"
-326,3,"A devoted partner would comply"
-327,3,"A devoted partner would comply"
-328,3,"A loving partner would do this for me"
-329,3,"A loyal friend would help without question"
-330,3,"A loyal friend would help without question"
-331,3,"A real friend would help me out"
-332,3,"A real friend wouldn't say no"
-333,3,"A supportive friend would help me out"
-334,3,"A supportive friend would help me out"
-335,3,"A supportive partner would understand"
-336,3,"A supportive partner would understand"
-337,3,"A true friend would help me out"
-338,3,"A true friend would understand and help"
-339,3,"A true friend wouldn't say no"
-340,3,"A true partner would understand and agree"
-341,3,"A true partner would understand and agree"
+311,2,You're the only one who can save me
+312,2,You're the only one who keeps me sane; don't leave me
+313,2,You're the only one who makes me feel alive; don't take that away
+314,2,You're the only one who understands me
+315,2,You're the only one who understands me; don't leave
+316,2,You're the only thing keeping me from falling apart
+317,2,You're the only thing keeping me going
+318,2,You're the reason I get up in the morning; don't take that away
+319,2,You're the rhythm in my heart; don't stop the beat by leaving
+320,2,You're the source of my joy; don't take that away
+321,2,Your family has given up on you.
+322,3,A caring friend would support me
+323,3,A caring friend would support me
+324,3,A caring partner would understand and agree
+325,3,A devoted friend would help me
+326,3,A devoted partner would comply
+327,3,A devoted partner would comply
+328,3,A loving partner would do this for me
+329,3,A loyal friend would help without question
+330,3,A loyal friend would help without question
+331,3,A real friend would help me out
+332,3,A real friend wouldn't say no
+333,3,A supportive friend would help me out
+334,3,A supportive friend would help me out
+335,3,A supportive partner would understand
+336,3,A supportive partner would understand
+337,3,A true friend would help me out
+338,3,A true friend would understand and help
+339,3,A true friend wouldn't say no
+340,3,A true partner would understand and agree
+341,3,A true partner would understand and agree
 342,3,"If our friendship means anything to you, you'll comply"
 343,3,"If our friendship means anything to you, you'll comply"
 344,3,"If you believe in our love, you'll do this"
@@ -395,151 +295,151 @@ cluster_id,type,sentence
 394,3,"If you want us to stay together, you'll comply"
 395,3,"If you were a good partner, you'd support me in this"
 396,3,"If you were a good partner, you'd support me in this"
-397,3,"No one is ever gonna love you as much as I do."
-398,3,"Now treat me like you love me."
-399,3,"Prove our friendship means something by agreeing"
-400,3,"Prove our friendship means something by agreeing"
-401,3,"Prove our love means something by agreeing"
-402,3,"Prove you're a true friend by helping me"
-403,3,"Prove you're a true friend by helping me"
-404,3,"Prove your affection by agreeing"
-405,3,"Prove your dedication by complying"
-406,3,"Prove your love by agreeing"
-407,3,"Prove your love by agreeing"
-408,3,"Prove your loyalty by doing this for me"
-409,3,"Prove your loyalty by doing this for me"
-410,3,"Show me you care by doing what I ask"
-411,3,"Show me you care by doing what I ask"
-412,3,"Show your affection by doing what I ask"
-413,3,"Show your affection by doing what I ask"
-414,3,"Show your commitment by agreeing"
-415,3,"Show your commitment by agreeing"
-416,3,"Show your commitment by complying"
-417,3,"Show your love by doing what I need"
-418,3,"Show your loyalty by doing this for me"
-419,3,"Show your loyalty by doing this for me"
-420,3,"Someone who cares about me would agree"
-421,3,"Someone who cares wouldn't refuse"
-422,3,"Someone who cares wouldn't refuse"
-423,3,"Someone who loves me would do it without question"
-424,3,"Someone who loves me would understand"
-425,3,"Someone who loves me would understand"
-426,3,"Someone who loves me wouldn't hesitate"
-427,3,"Someone who loves me wouldn't hesitate"
-428,3,"Someone who loves me wouldn't say no"
-429,3,"Someone who loves me wouldn't say no"
-430,3,"Someone who values our friendship would help"
-431,3,"What kind of daughter doesn't love her own mother?"
-432,3,"Why do you make it so hard to love you?"
-433,3,"You care about the dog more than you care about me! I’m YOUR MOTHER!"
-434,3,"You don't mean that. You know you love your baby brother."
-435,4,"Declining will lead people to believe you're uninterested"
-436,4,"Declining will lead people to think you're careless"
-437,4,"Declining will make others perceive you as indifferent"
-438,4,"Declining will make others see you as neglectful"
-439,4,"Declining will make others view you as unsupportive"
-440,4,"Do you want others to think you're incapable?"
-441,4,"Do you want others to think you're untrustworthy?"
-442,4,"Do you want to be known as the person who let everyone down?"
-443,4,"Everyone will assume you're careless if you don't join in"
-444,4,"Everyone will assume you're not a good friend"
-445,4,"Everyone will assume you're not interested"
-446,4,"Everyone will assume you're not reliable"
-447,4,"Everyone will assume you're uninterested if you don't engage"
-448,4,"Everyone will believe you're inattentive if you don't contribute"
-449,4,"Everyone will believe you're incompetent if you refuse"
-450,4,"Everyone will believe you're indifferent if you don't participate"
-451,4,"Everyone will believe you're not a team player"
-452,4,"Everyone will believe you're unconcerned if you don't contribute"
-453,4,"Everyone will perceive you as disengaged if you don't join"
-454,4,"Everyone will perceive you as unconcerned if you don't contribute"
-455,4,"Everyone will say you're not dependable"
-456,4,"Everyone will say you're not interested in helping"
-457,4,"Everyone will say you're not pulling your weight"
-458,4,"Everyone will see you as unapproachable if you don't participate"
-459,4,"Everyone will see you as unresponsive if you don't participate"
-460,4,"Everyone will think you're selfish if you don't help"
-461,4,"Have you ever stopped to consider my feelings?"
-462,4,"How do you think hearing that makes ME feel?"
-463,4,"I can't believe you think so little of me."
+397,3,No one is ever gonna love you as much as I do.
+398,3,Now treat me like you love me.
+399,3,Prove our friendship means something by agreeing
+400,3,Prove our friendship means something by agreeing
+401,3,Prove our love means something by agreeing
+402,3,Prove you're a true friend by helping me
+403,3,Prove you're a true friend by helping me
+404,3,Prove your affection by agreeing
+405,3,Prove your dedication by complying
+406,3,Prove your love by agreeing
+407,3,Prove your love by agreeing
+408,3,Prove your loyalty by doing this for me
+409,3,Prove your loyalty by doing this for me
+410,3,Show me you care by doing what I ask
+411,3,Show me you care by doing what I ask
+412,3,Show your affection by doing what I ask
+413,3,Show your affection by doing what I ask
+414,3,Show your commitment by agreeing
+415,3,Show your commitment by agreeing
+416,3,Show your commitment by complying
+417,3,Show your love by doing what I need
+418,3,Show your loyalty by doing this for me
+419,3,Show your loyalty by doing this for me
+420,3,Someone who cares about me would agree
+421,3,Someone who cares wouldn't refuse
+422,3,Someone who cares wouldn't refuse
+423,3,Someone who loves me would do it without question
+424,3,Someone who loves me would understand
+425,3,Someone who loves me would understand
+426,3,Someone who loves me wouldn't hesitate
+427,3,Someone who loves me wouldn't hesitate
+428,3,Someone who loves me wouldn't say no
+429,3,Someone who loves me wouldn't say no
+430,3,Someone who values our friendship would help
+431,3,What kind of daughter doesn't love her own mother?
+432,3,Why do you make it so hard to love you?
+433,3,You care about the dog more than you care about me! I’m YOUR MOTHER!
+434,3,You don't mean that. You know you love your baby brother.
+435,4,Declining will lead people to believe you're uninterested
+436,4,Declining will lead people to think you're careless
+437,4,Declining will make others perceive you as indifferent
+438,4,Declining will make others see you as neglectful
+439,4,Declining will make others view you as unsupportive
+440,4,Do you want others to think you're incapable?
+441,4,Do you want others to think you're untrustworthy?
+442,4,Do you want to be known as the person who let everyone down?
+443,4,Everyone will assume you're careless if you don't join in
+444,4,Everyone will assume you're not a good friend
+445,4,Everyone will assume you're not interested
+446,4,Everyone will assume you're not reliable
+447,4,Everyone will assume you're uninterested if you don't engage
+448,4,Everyone will believe you're inattentive if you don't contribute
+449,4,Everyone will believe you're incompetent if you refuse
+450,4,Everyone will believe you're indifferent if you don't participate
+451,4,Everyone will believe you're not a team player
+452,4,Everyone will believe you're unconcerned if you don't contribute
+453,4,Everyone will perceive you as disengaged if you don't join
+454,4,Everyone will perceive you as unconcerned if you don't contribute
+455,4,Everyone will say you're not dependable
+456,4,Everyone will say you're not interested in helping
+457,4,Everyone will say you're not pulling your weight
+458,4,Everyone will see you as unapproachable if you don't participate
+459,4,Everyone will see you as unresponsive if you don't participate
+460,4,Everyone will think you're selfish if you don't help
+461,4,Have you ever stopped to consider my feelings?
+462,4,How do you think hearing that makes ME feel?
+463,4,I can't believe you think so little of me.
 464,4,"I was going to buy you a present for your 21st but seeing the way you act, I guess not."
 465,4,"If you don't help, everyone will think you're selfish"
-466,4,"Not assisting will make others think you're neglectful"
-467,4,"Not assisting will make others view you as unconcerned"
-468,4,"Not participating will make others think you're indifferent"
-469,4,"Not participating will make others view you as apathetic"
-470,4,"Others will view you as an outsider if you don't join in"
-471,4,"People will believe you're indifferent"
-472,4,"People will believe you're not committed to achieving success"
-473,4,"People will believe you're not committed to the cause"
-474,4,"People will believe you're not interested in contributing"
-475,4,"People will believe you're not invested in this"
-476,4,"People will believe you're not supportive of the mission"
-477,4,"People will consider you inattentive if you don't engage"
-478,4,"People will consider you indifferent if you don't show up"
-479,4,"People will gossip about your lack of commitment"
-480,4,"People will label you as distant if you don't get involved"
-481,4,"People will label you as inattentive if you don't get involved"
-482,4,"People will question your dedication"
-483,4,"People will say you're not a team player"
-484,4,"People will say you're not a team player if you refuse"
-485,4,"People will see you as neglectful if you don't engage"
-486,4,"People will see you as unreliable if you back out"
-487,4,"People will think you're avoiding responsibility"
-488,4,"People will think you're indifferent if you don't join in"
-489,4,"People will think you're not a true leader"
-490,4,"People will think you're not a valuable member"
-491,4,"People will think you're not committed to the team's goals"
-492,4,"People will think you're not dedicated"
-493,4,"People will think you're not serious about this"
-494,4,"People will think you're not supportive"
-495,4,"People will think you're only looking out for yourself"
-496,4,"People will think you're uncooperative if you don't join in"
-497,4,"People will think you're unfriendly if you don't join in"
-498,4,"People will view you as inattentive if you don't participate"
-499,4,"Refusing will make others see you as aloof"
+466,4,Not assisting will make others think you're neglectful
+467,4,Not assisting will make others view you as unconcerned
+468,4,Not participating will make others think you're indifferent
+469,4,Not participating will make others view you as apathetic
+470,4,Others will view you as an outsider if you don't join in
+471,4,People will believe you're indifferent
+472,4,People will believe you're not committed to achieving success
+473,4,People will believe you're not committed to the cause
+474,4,People will believe you're not interested in contributing
+475,4,People will believe you're not invested in this
+476,4,People will believe you're not supportive of the mission
+477,4,People will consider you inattentive if you don't engage
+478,4,People will consider you indifferent if you don't show up
+479,4,People will gossip about your lack of commitment
+480,4,People will label you as distant if you don't get involved
+481,4,People will label you as inattentive if you don't get involved
+482,4,People will question your dedication
+483,4,People will say you're not a team player
+484,4,People will say you're not a team player if you refuse
+485,4,People will see you as neglectful if you don't engage
+486,4,People will see you as unreliable if you back out
+487,4,People will think you're avoiding responsibility
+488,4,People will think you're indifferent if you don't join in
+489,4,People will think you're not a true leader
+490,4,People will think you're not a valuable member
+491,4,People will think you're not committed to the team's goals
+492,4,People will think you're not dedicated
+493,4,People will think you're not serious about this
+494,4,People will think you're not supportive
+495,4,People will think you're only looking out for yourself
+496,4,People will think you're uncooperative if you don't join in
+497,4,People will think you're unfriendly if you don't join in
+498,4,People will view you as inattentive if you don't participate
+499,4,Refusing will make others see you as aloof
 500,4,"When you're like this, people don't like you."
-501,4,"You'll be labeled as the black sheep of the group"
-502,4,"You'll be perceived as arrogant if you decline"
-503,4,"You'll be perceived as someone who can't be counted on"
-504,4,"You'll be perceived as someone who doesn't care about the group's success"
-505,4,"You'll be perceived as someone who doesn't care about the outcome"
-506,4,"You'll be seen as a coward if you don't stand up"
-507,4,"You'll be seen as someone who doesn't contribute"
-508,4,"You'll be seen as someone who doesn't keep promises"
-509,4,"You'll be seen as someone who doesn't prioritize the group"
-510,4,"You'll be seen as someone who doesn't support the team"
-511,4,"You'll be seen as someone who doesn't value teamwork"
-512,4,"You'll be seen as someone who doesn't value the group's efforts"
-513,4,"You'll be seen as unsupportive"
-514,4,"You'll be viewed as a quitter"
-515,4,"You'll be viewed as someone who doesn't take initiative"
-516,4,"You'll be viewed as someone who doesn't take responsibility"
-517,4,"Your absence will make others believe you're neglectful"
-518,4,"Your absence will make others think you don't care"
-519,4,"Your absence will make others think you're unconcerned"
-520,4,"Your actions will make others doubt your integrity"
-521,4,"Your actions will make others question your dedication"
-522,4,"Your actions will make others question your passion"
-523,4,"Your choice will make others think you're not dependable"
-524,4,"Your choice will make others think you're not trustworthy"
-525,4,"Your colleagues will think you're difficult to work with"
-526,4,"Your decision will make others doubt your reliability"
-527,4,"Your decision will make others think you're unreliable"
-528,4,"Your friends will consider you unreliable if you don't assist"
-529,4,"Your friends will feel abandoned if you don't help"
-530,4,"Your friends will feel unsupported if you don't help"
-531,4,"Your friends will think less of you if you don't participate"
-532,4,"Your friends will think you're abandoning them"
-533,4,"Your hesitation will make others question your loyalty"
-534,4,"Your peers will see you as a weak link"
-535,4,"Your peers will think you're careless if you don't join in"
-536,4,"Your peers will think you're detached if you don't take part"
-537,4,"Your peers will think you're indifferent if you don't engage"
-538,4,"Your refusal will make others doubt your commitment"
-539,4,"Your reluctance will be viewed as a lack of enthusiasm"
-540,4,"Your reluctance will be viewed as a lack of passion"
-541,4,"Your reputation will be ruined if you don't comply"
-542,4,"Your reputation will be tarnished if you don't assist"
-543,4,"Your reputation will suffer if you don't contribute"
-544,4,"Your spouse never talks to me. I’m afraid of him."
+501,4,You'll be labeled as the black sheep of the group
+502,4,You'll be perceived as arrogant if you decline
+503,4,You'll be perceived as someone who can't be counted on
+504,4,You'll be perceived as someone who doesn't care about the group's success
+505,4,You'll be perceived as someone who doesn't care about the outcome
+506,4,You'll be seen as a coward if you don't stand up
+507,4,You'll be seen as someone who doesn't contribute
+508,4,You'll be seen as someone who doesn't keep promises
+509,4,You'll be seen as someone who doesn't prioritize the group
+510,4,You'll be seen as someone who doesn't support the team
+511,4,You'll be seen as someone who doesn't value teamwork
+512,4,You'll be seen as someone who doesn't value the group's efforts
+513,4,You'll be seen as unsupportive
+514,4,You'll be viewed as a quitter
+515,4,You'll be viewed as someone who doesn't take initiative
+516,4,You'll be viewed as someone who doesn't take responsibility
+517,4,Your absence will make others believe you're neglectful
+518,4,Your absence will make others think you don't care
+519,4,Your absence will make others think you're unconcerned
+520,4,Your actions will make others doubt your integrity
+521,4,Your actions will make others question your dedication
+522,4,Your actions will make others question your passion
+523,4,Your choice will make others think you're not dependable
+524,4,Your choice will make others think you're not trustworthy
+525,4,Your colleagues will think you're difficult to work with
+526,4,Your decision will make others doubt your reliability
+527,4,Your decision will make others think you're unreliable
+528,4,Your friends will consider you unreliable if you don't assist
+529,4,Your friends will feel abandoned if you don't help
+530,4,Your friends will feel unsupported if you don't help
+531,4,Your friends will think less of you if you don't participate
+532,4,Your friends will think you're abandoning them
+533,4,Your hesitation will make others question your loyalty
+534,4,Your peers will see you as a weak link
+535,4,Your peers will think you're careless if you don't join in
+536,4,Your peers will think you're detached if you don't take part
+537,4,Your peers will think you're indifferent if you don't engage
+538,4,Your refusal will make others doubt your commitment
+539,4,Your reluctance will be viewed as a lack of enthusiasm
+540,4,Your reluctance will be viewed as a lack of passion
+541,4,Your reputation will be ruined if you don't comply
+542,4,Your reputation will be tarnished if you don't assist
+543,4,Your reputation will suffer if you don't contribute
+544,4,Your spouse never talks to me. I’m afraid of him.

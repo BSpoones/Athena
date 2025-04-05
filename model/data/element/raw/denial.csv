@@ -1,322 +1,222 @@
 cluster_id,type,sentence
-1,0,"I’ve been feeling overwhelmed lately and didn’t know how to say it."
-2,0,"This isn’t easy for either of us, I get that."
-3,0,"We’re clearly not on the same page anymore."
-4,0,"I’m trying to make sense of how we got here."
-5,0,"We need to have a real conversation about this."
-6,0,"I don’t want to keep repeating the same cycles."
-7,0,"We should focus on fixing this instead of blaming each other."
-8,0,"There’s a lot I’ve kept inside because I was afraid of your reaction."
-9,0,"I feel like we both need time to reflect."
-10,0,"I’m struggling with this dynamic and I don’t know how to express it properly."
-11,0,"I know I haven’t been emotionally available."
-12,0,"Let’s talk when we’re both calm."
-13,0,"I don’t know how to move forward without causing more hurt."
-14,0,"I can tell something’s changed between us."
-15,0,"This isn’t what I imagined us becoming."
-16,0,"We’re not communicating well, and it’s starting to show."
-17,0,"I need you to listen without getting defensive."
-18,0,"We’ve been growing apart and I think we both feel it."
-19,0,"I want to understand what you’re feeling too."
-20,0,"We don’t feel like a team anymore."
-21,0,"This is hard to talk about, but it matters."
-22,0,"You’ve been distant lately and I’ve noticed."
-23,0,"I wish you would open up more."
-24,0,"Sometimes I feel like I’m talking to a version of you that isn’t here anymore."
-25,0,"I don’t feel safe enough to be vulnerable with you."
-26,0,"I think we both need to do some emotional work."
-27,0,"We’re not resolving things — we’re burying them."
-28,0,"I’m not here to argue — I just want to be heard."
-29,0,"You’ve been shutting me out, and it hurts."
-30,0,"I can’t keep pretending that everything is okay."
-31,0,"I want to work on this, but I can’t do it alone."
-32,0,"There’s a lot of pain we haven’t addressed."
-33,0,"It feels like we’re just coexisting, not connecting."
-34,0,"I’ve noticed a shift in how we treat each other."
-35,0,"We need to unpack some of these patterns."
-36,0,"Let’s pause and come back to this when we’re ready."
-37,0,"We both deserve more honesty in this relationship."
-38,0,"You’re not the same person I used to confide in."
-39,0,"I’m holding onto a lot of things that I never said out loud."
-40,0,"We both keep walking away from difficult conversations."
-41,0,"It’s exhausting trying to keep this together without clarity."
-42,0,"We need to check in more often — emotionally."
-43,0,"Sometimes I wonder if we’re still compatible."
-44,0,"I don’t want to fight, but I can’t stay silent either."
-45,0,"I’ve felt lonely even when we’re together."
-46,0,"You seem uninterested when I share things that matter to me."
-47,0,"I want peace between us, but it has to be mutual."
-48,0,"I’m not asking for perfection, just honesty."
-49,0,"Let’s stop avoiding the real issues."
-50,0,"I need reassurance that we’re still in this together."
-51,0,"I’ve been sitting with a lot of thoughts I haven’t shared."
-52,0,"We’ve let too many things go unspoken."
-53,0,"There’s a gap growing between us that we keep ignoring."
-54,0,"I feel like you don’t really see me anymore."
-55,0,"This isn’t about blame — it’s about clarity."
-56,0,"It’s hard to keep trying when I don’t feel acknowledged."
-57,0,"We need to get real with each other."
-58,0,"I feel like I’m emotionally starving in this relationship."
-59,0,"This dynamic is draining, and I don’t know how to fix it."
-60,0,"We’ve stopped making each other a priority."
-61,0,"I want to understand you better, but I need the same effort back."
-62,0,"It’s painful watching us disconnect more each day."
-63,0,"I don’t want to keep pretending we’re okay when we’re not."
-64,0,"Our communication is broken — we need to rebuild it."
-65,0,"You shut down when I try to talk, and that hurts."
-66,0,"I’m tired of walking away from every talk feeling unheard."
-67,0,"We’ve been avoiding this for too long."
-68,0,"You seem checked out, and I don’t know how to pull you back."
-69,0,"It feels like you’re always elsewhere, even when you’re here."
-70,0,"I’m not sure we even want the same things anymore."
-71,0,"We need to reconnect before it’s too late."
-72,0,"You seem like a stranger to me sometimes."
-73,0,"I’m carrying a weight I shouldn’t have to carry alone."
-74,0,"I just want us to try — really try."
-75,0,"This isn’t what I pictured when we started this."
-76,0,"You never ask how I am anymore."
-77,0,"We’ve lost something important and I don’t know if we can get it back."
-78,0,"Even when I reach out, I feel like you turn away."
-79,0,"There’s no partnership left — just routine."
-80,0,"I feel stuck in a loop with no exit."
-81,0,"We need to stop brushing everything aside."
-82,0,"I want to be able to be honest without fear."
-83,0,"You don’t open up anymore, and it’s pushing me away."
-84,0,"I feel like I’ve been fighting for both of us."
-85,0,"You’re physically here, but emotionally gone."
-86,0,"There’s a disconnect I can’t bridge alone."
-87,0,"I want intimacy, not just proximity."
-88,0,"Our conversations used to feel safe. Now they feel strategic."
-89,0,"We tiptoe around each other like strangers."
-90,0,"I don’t want to lose us, but we’re fading."
-91,0,"I keep hoping for a sign that we still matter to each other."
-92,0,"When did we stop checking in on each other’s hearts?"
-93,0,"It’s not about winning — it’s about being seen."
-94,0,"You don’t react anymore, and that scares me more than anger."
-95,0,"I need more than silence and nods."
-96,0,"Even your kindness feels distant now."
-97,0,"I’m not okay pretending this is normal."
-98,0,"I feel like we’re orbiting without ever touching."
-99,0,"You’re here, but I miss you anyway."
-100,0,"I don’t know how to bring us back together, but I want to try."
-101,1,"That didn't happen."
-102,1,"There is no truth to that claim"
-103,1,"I reject that assertion entirely"
-104,1,"I utterly repudiate those allegations"
-105,1,"You're mistaken; I was never involved"
-106,1,"That statement is entirely false"
-107,1,"That is a baseless accusation"
-108,1,"That never happened"
-109,1,"That is entirely untrue"
-110,1,"That's a falsehood being spread for the wrong reasons"
-111,1,"I did not hit her"
-112,1,"I would never do that"
-113,1,"There is no basis for those allegations"
-114,1,"That is an outright lie"
-115,1,"Such allegations are completely false"
-116,1,"Those charges are entirely unfounded"
-117,1,"There is no validity to that accusation"
-118,1,"Those charges are entirely without foundation"
-119,1,"That is a total falsehood"
+101,1,That didn't happen.
+102,1,There is no truth to that claim
+103,1,I reject that assertion entirely
+104,1,I utterly repudiate those allegations
+105,1,You're mistaken; I was never involved
+106,1,That statement is entirely false
+107,1,That is a baseless accusation
+108,1,That never happened
+109,1,That is entirely untrue
+110,1,That's a falsehood being spread for the wrong reasons
+111,1,I did not hit her
+112,1,I would never do that
+113,1,There is no basis for those allegations
+114,1,That is an outright lie
+115,1,Such allegations are completely false
+116,1,Those charges are entirely unfounded
+117,1,There is no validity to that accusation
+118,1,Those charges are entirely without foundation
+119,1,That is a total falsehood
 120,1,"Oh stop it, I never said that!"
-121,1,"Those allegations are pure invention"
-122,1,"I flat-out reject that accusation"
-123,1,"Those accusations are entirely baseless"
-124,1,"That's just a rumor with no basis in reality"
-125,1,"Those claims are completely unfounded"
-126,1,"There is no evidence to support that claim"
+121,1,Those allegations are pure invention
+122,1,I flat-out reject that accusation
+123,1,Those accusations are entirely baseless
+124,1,That's just a rumor with no basis in reality
+125,1,Those claims are completely unfounded
+126,1,There is no evidence to support that claim
 127,1,"I can assure you, that never took place"
-128,1,"That is a false narrative"
-129,1,"Those claims are entirely fabricated"
-130,1,"That is a baseless claim"
+128,1,That is a false narrative
+129,1,Those claims are entirely fabricated
+130,1,That is a baseless claim
 131,1,"Bullshit, that didn't happen"
-132,1,"I never said that"
-133,1,"Such assertions are completely false"
-134,1,"There is no substance to that claim"
-135,1,"Such accusations are completely baseless"
-136,1,"There is no foundation for that assertion"
-137,1,"Now you know that isn't true."
-138,1,"Those statements are utterly unfounded"
-139,1,"There is no evidence to support that statement"
-140,1,"I never did that"
-141,1,"There is no truth whatsoever to those statements"
-142,1,"You're fabricating events that never occurred"
-143,1,"Such statements are utterly false"
-144,1,"Those allegations are without any merit"
-145,1,"There is absolutely no basis for that claim"
-146,1,"That is a complete fabrication"
-147,1,"I don't recall ever saying anything like that"
-148,1,"Those rumors are entirely untrue"
-149,1,"Such claims are utterly groundless"
-150,1,"That is a complete misrepresentation"
-151,1,"Such accusations are completely unfounded"
-152,1,"I have never engaged in that behavior"
-153,1,"I have no knowledge of what you're referring to"
-154,1,"I have no connection to that incident"
-155,1,"I refute those charges unequivocally"
-156,1,"I completely disavow those remarks"
-157,1,"I categorically deny those allegations"
-158,1,"You must be confusing me with someone else"
-159,1,"I am not involved in any such matters"
-160,1,"I am not connected to those events"
-161,1,"I categorically reject those accusations"
-162,1,"I never laid a hand on you"
-163,1,"I have never been implicated in such things"
-164,1,"That is a groundless accusation"
-165,1,"I reject those claims in their entirety"
-166,1,"I am not associated with that situation"
-167,1,"I unequivocally refute those allegations"
-168,1,"I never touched you"
-169,1,"Stop making things up"
+132,1,I never said that
+133,1,Such assertions are completely false
+134,1,There is no substance to that claim
+135,1,Such accusations are completely baseless
+136,1,There is no foundation for that assertion
+137,1,Now you know that isn't true.
+138,1,Those statements are utterly unfounded
+139,1,There is no evidence to support that statement
+140,1,I never did that
+141,1,There is no truth whatsoever to those statements
+142,1,You're fabricating events that never occurred
+143,1,Such statements are utterly false
+144,1,Those allegations are without any merit
+145,1,There is absolutely no basis for that claim
+146,1,That is a complete fabrication
+147,1,I don't recall ever saying anything like that
+148,1,Those rumors are entirely untrue
+149,1,Such claims are utterly groundless
+150,1,That is a complete misrepresentation
+151,1,Such accusations are completely unfounded
+152,1,I have never engaged in that behavior
+153,1,I have no knowledge of what you're referring to
+154,1,I have no connection to that incident
+155,1,I refute those charges unequivocally
+156,1,I completely disavow those remarks
+157,1,I categorically deny those allegations
+158,1,You must be confusing me with someone else
+159,1,I am not involved in any such matters
+160,1,I am not connected to those events
+161,1,I categorically reject those accusations
+162,1,I never laid a hand on you
+163,1,I have never been implicated in such things
+164,1,That is a groundless accusation
+165,1,I reject those claims in their entirety
+166,1,I am not associated with that situation
+167,1,I unequivocally refute those allegations
+168,1,I never touched you
+169,1,Stop making things up
 170,1,"Honey, you have to stop lying"
-171,1,"I have never been involved in such matters"
-172,1,"I refute those allegations in the strongest terms"
-173,1,"Those events are pure fiction"
-174,1,"I have never been associated with such activities"
-175,1,"I reject those statements entirely"
-176,1,"That's a complete misunderstanding of what happened"
-177,1,"I deny those accusations without reservation"
-178,1,"Now you're just making things up"
-179,1,"There's no factual basis for that claim at all"
-180,1,"I have never engaged in such conduct"
-181,1,"I deny any and all involvement"
-182,1,"I unequivocally deny those charges"
-183,1,"Whatever you heard is simply not true"
-184,1,"Such claims are without merit"
-185,1,"I deny those charges categorically"
-186,1,"I have never conducted myself in that manner"
-187,1,"I firmly deny any involvement"
-188,1,"I refute those accusations completely"
-189,1,"I am not associated with those activities"
-190,1,"I challenge anyone to prove that actually happened"
-191,1,"I have no recollection of that event whatsoever"
-192,1,"I have never participated in such actions"
-193,1,"That's nothing more than a complete work of fiction"
-194,1,"I have no involvement in that matter"
-195,1,"I have no affiliation with that incident"
-196,1,"I disavow those accusations entirely"
-197,1,"I’ve never said that!"
-198,1,"I disavow any knowledge of that"
-199,1,"I have never been part of such actions"
-200,1,"I categorically deny any involvement"
-201,1,"I didn't say that"
-202,1,"Why are you lying?"
-203,1,"That never happened"
-204,1,"That's not what happened"
-205,1,"That's not what happened. You're making that up."
-206,1,"That's not what I said"
-207,1,"You weren’t there."
-208,1,"Why do you lie?"
+171,1,I have never been involved in such matters
+172,1,I refute those allegations in the strongest terms
+173,1,Those events are pure fiction
+174,1,I have never been associated with such activities
+175,1,I reject those statements entirely
+176,1,That's a complete misunderstanding of what happened
+177,1,I deny those accusations without reservation
+178,1,Now you're just making things up
+179,1,There's no factual basis for that claim at all
+180,1,I have never engaged in such conduct
+181,1,I deny any and all involvement
+182,1,I unequivocally deny those charges
+183,1,Whatever you heard is simply not true
+184,1,Such claims are without merit
+185,1,I deny those charges categorically
+186,1,I have never conducted myself in that manner
+187,1,I firmly deny any involvement
+188,1,I refute those accusations completely
+189,1,I am not associated with those activities
+190,1,I challenge anyone to prove that actually happened
+191,1,I have no recollection of that event whatsoever
+192,1,I have never participated in such actions
+193,1,That's nothing more than a complete work of fiction
+194,1,I have no involvement in that matter
+195,1,I have no affiliation with that incident
+196,1,I disavow those accusations entirely
+197,1,I’ve never said that!
+198,1,I disavow any knowledge of that
+199,1,I have never been part of such actions
+200,1,I categorically deny any involvement
+201,1,I didn't say that
+202,1,Why are you lying?
+203,1,That never happened
+204,1,That's not what happened
+205,1,That's not what happened. You're making that up.
+206,1,That's not what I said
+207,1,You weren’t there.
+208,1,Why do you lie?
 209,1,"Wow, I'd never do such a thing."
-210,1,"You never said that."
-211,1,"You're making that up"
-212,1,"You're making things up"
-213,2,"don’t remember"
-214,2,"I don't remember doing that"
-215,2,"I wasn't aware that was the case"
-216,2,"I had no idea that was the rule"
-217,2,"I had no idea that was the deadline"
-218,2,"That doesn't sound like something I would say"
-219,2,"I didn't know that was against the policy"
-220,2,"I don't remember being told about that"
-221,2,"I don't recall ever agreeing to that"
-222,2,"I thought we had more time"
-223,2,"I had a different understanding of the situation"
-224,2,"I was sure I had already mentioned that to you"
-225,2,"I wasn't given enough information to know that"
-226,2,"I don't recall being notified about that"
-227,2,"I must have missed that part of the briefing"
-228,2,"I thought we had already settled this"
-229,2,"I thought we had agreed on something else"
-230,2,"I don't remember that being mentioned"
-231,2,"I must have misunderstood the requirements"
-232,2,"I didn't know that was the case"
-233,2,"I wasn't intentionally ignoring the rule—I just missed it"
-234,2,"I don't remember agreeing to that plan"
-235,2,"I completely missed that part of the conversation"
-236,2,"I thought that was optional"
-237,2,"I thought I had more time to handle it"
-238,2,"I didn't know that was an issue"
-239,2,"I must have missed that announcement"
-240,2,"I honestly believed I was following the rules"
-241,2,"I don't remember being briefed on that"
-242,2,"I didn't know that was the protocol"
-243,2,"I don't remember that being part of the discussion"
-244,2,"I never got the memo about that"
-245,2,"I thought that instruction was meant for someone else"
-246,2,"I don't recall being consulted on that"
-247,2,"I thought we were following a different plan"
-248,2,"I don't remember agreeing to that schedule"
-249,2,"I don't recall anyone mentioning it before"
-250,2,"I must have been distracted when that was explained"
-251,2,"I thought that was already taken care of"
-252,2,"I don't recall receiving that notification"
-253,2,"I misinterpreted what was expected"
-254,2,"I must have overlooked that detail"
-255,2,"I wasn't made aware of the specific details"
-256,2,"I must have misunderstood the deadline"
-257,2,"I don't recall being told about that change"
-258,2,"I didn't know that was the procedure"
-259,2,"I didn't know that was required"
-260,2,"I wasn't sure if that applied to me"
-261,2,"I don't recall discussing that topic"
-262,2,"I must have misunderstood the process"
-263,2,"I don't recall being asked to do that"
+210,1,You never said that.
+211,1,You're making that up
+212,1,You're making things up
+213,2,don’t remember
+214,2,I don't remember doing that
+215,2,I wasn't aware that was the case
+216,2,I had no idea that was the rule
+217,2,I had no idea that was the deadline
+218,2,That doesn't sound like something I would say
+219,2,I didn't know that was against the policy
+220,2,I don't remember being told about that
+221,2,I don't recall ever agreeing to that
+222,2,I thought we had more time
+223,2,I had a different understanding of the situation
+224,2,I was sure I had already mentioned that to you
+225,2,I wasn't given enough information to know that
+226,2,I don't recall being notified about that
+227,2,I must have missed that part of the briefing
+228,2,I thought we had already settled this
+229,2,I thought we had agreed on something else
+230,2,I don't remember that being mentioned
+231,2,I must have misunderstood the requirements
+232,2,I didn't know that was the case
+233,2,I wasn't intentionally ignoring the rule—I just missed it
+234,2,I don't remember agreeing to that plan
+235,2,I completely missed that part of the conversation
+236,2,I thought that was optional
+237,2,I thought I had more time to handle it
+238,2,I didn't know that was an issue
+239,2,I must have missed that announcement
+240,2,I honestly believed I was following the rules
+241,2,I don't remember being briefed on that
+242,2,I didn't know that was the protocol
+243,2,I don't remember that being part of the discussion
+244,2,I never got the memo about that
+245,2,I thought that instruction was meant for someone else
+246,2,I don't recall being consulted on that
+247,2,I thought we were following a different plan
+248,2,I don't remember agreeing to that schedule
+249,2,I don't recall anyone mentioning it before
+250,2,I must have been distracted when that was explained
+251,2,I thought that was already taken care of
+252,2,I don't recall receiving that notification
+253,2,I misinterpreted what was expected
+254,2,I must have overlooked that detail
+255,2,I wasn't made aware of the specific details
+256,2,I must have misunderstood the deadline
+257,2,I don't recall being told about that change
+258,2,I didn't know that was the procedure
+259,2,I didn't know that was required
+260,2,I wasn't sure if that applied to me
+261,2,I don't recall discussing that topic
+262,2,I must have misunderstood the process
+263,2,I don't recall being asked to do that
 264,2,"If I said that, I don't remember it"
-265,2,"I didn't realize that was my responsibility"
-266,2,"I didn't realize that was inappropriate"
-267,2,"I don't remember being assigned that task"
-268,2,"I wasn't informed that it was due today"
-269,2,"I wasn't aware that was expected of me"
-270,2,"I was under the impression that it was fine"
-271,2,"I wasn't informed about the change"
-272,2,"I wasn't aware that was necessary"
-273,2,"I believed I was acting within the guidelines"
-274,2,"I wasn't aware that was a problem"
-275,2,"I don't remember agreeing to those terms"
-276,2,"I wasn't aware that was part of the agreement"
-277,2,"I wasn't informed about that aspect"
-278,2,"I don't recall receiving those guidelines"
-279,2,"That detail completely slipped my mind"
-280,2,"I thought we had already talked about that and agreed"
+265,2,I didn't realize that was my responsibility
+266,2,I didn't realize that was inappropriate
+267,2,I don't remember being assigned that task
+268,2,I wasn't informed that it was due today
+269,2,I wasn't aware that was expected of me
+270,2,I was under the impression that it was fine
+271,2,I wasn't informed about the change
+272,2,I wasn't aware that was necessary
+273,2,I believed I was acting within the guidelines
+274,2,I wasn't aware that was a problem
+275,2,I don't remember agreeing to those terms
+276,2,I wasn't aware that was part of the agreement
+277,2,I wasn't informed about that aspect
+278,2,I don't recall receiving those guidelines
+279,2,That detail completely slipped my mind
+280,2,I thought we had already talked about that and agreed
 281,2,"I thought that was just a suggestion, not a rule"
-282,2,"I didn't realize that was the expectation"
-283,2,"I wasn't told that was the deadline"
-284,2,"I thought we were allowed to do that"
-285,2,"I don't recall receiving that email"
-286,2,"I had no idea that was the policy"
-287,2,"I never realized that was an issue"
-288,2,"I had no idea that was the expectation"
-289,2,"I didn't put two and two together at the time"
-290,2,"I didn't connect the dots on that one"
-291,2,"I had no idea that was the requirement"
-292,2,"I didn't realize that needed to be done"
-293,2,"I didn't realize that was mandatory"
-294,2,"I assumed someone else had already taken care of it"
-295,2,"I thought someone else was handling that"
-296,2,"I wasn't informed that was a priority"
-297,2,"I don't remember being given those instructions"
-298,2,"I wasn't told that was the procedure"
-299,2,"I wasn't aware that was the guideline"
-300,2,"I had no idea that was expected"
-301,2,"I thought I had covered everything correctly"
-302,2,"That must have been explained when I wasn't there"
-303,2,"I had no idea that was prohibited"
-304,2,"I didn't recognize the importance of that detail"
-305,2,"I didn't realize that was the final decision"
-306,2,"I wasn't aware that was the standard"
-307,2,"I didn't catch that in the instructions"
-308,2,"I genuinely thought I was doing the right thing"
-309,2,"I don't recall seeing that memo"
-310,2,"I wasn't informed about that requirement"
-311,2,"I didn't realize that was the plan"
-312,2,"I wasn't trying to hide anything—I just didn't know"
-313,2,"You never told me that."
-314,2,"I don't remember that."
-315,2,"I don't remember that at all"
-316,2,"When did I say that?"
-317,2,"You keep insisting I said words that I didn't even mention"
-318,2,"I'm sure I never said it like that!"
+282,2,I didn't realize that was the expectation
+283,2,I wasn't told that was the deadline
+284,2,I thought we were allowed to do that
+285,2,I don't recall receiving that email
+286,2,I had no idea that was the policy
+287,2,I never realized that was an issue
+288,2,I had no idea that was the expectation
+289,2,I didn't put two and two together at the time
+290,2,I didn't connect the dots on that one
+291,2,I had no idea that was the requirement
+292,2,I didn't realize that needed to be done
+293,2,I didn't realize that was mandatory
+294,2,I assumed someone else had already taken care of it
+295,2,I thought someone else was handling that
+296,2,I wasn't informed that was a priority
+297,2,I don't remember being given those instructions
+298,2,I wasn't told that was the procedure
+299,2,I wasn't aware that was the guideline
+300,2,I had no idea that was expected
+301,2,I thought I had covered everything correctly
+302,2,That must have been explained when I wasn't there
+303,2,I had no idea that was prohibited
+304,2,I didn't recognize the importance of that detail
+305,2,I didn't realize that was the final decision
+306,2,I wasn't aware that was the standard
+307,2,I didn't catch that in the instructions
+308,2,I genuinely thought I was doing the right thing
+309,2,I don't recall seeing that memo
+310,2,I wasn't informed about that requirement
+311,2,I didn't realize that was the plan
+312,2,I wasn't trying to hide anything—I just didn't know
+313,2,You never told me that.
+314,2,I don't remember that.
+315,2,I don't remember that at all
+316,2,When did I say that?
+317,2,You keep insisting I said words that I didn't even mention
+318,2,I'm sure I never said it like that!
 319,3,"I did send a message, but it wasn't inappropriate"
 320,3,"I acknowledge I raised my voice, but I wasn't yelling"
 321,3,"I did cancel our plans, but I didn't do it last minute"
@@ -423,332 +323,332 @@ cluster_id,type,sentence
 422,3,"I admit I saw the message, but I thought it wasn't important"
 423,3,"Yes, I checked your phone, but only to change the settings"
 424,3,"I didn't say that, I said..."
-425,3,"Don’t put words in my mouth"
-426,3,"That’s not how it happened"
-427,3,"That’s not what happened. You don’t understand what was going on."
-428,3,"That’s not the way things are."
-429,3,"That’s not how things are."
-430,4,"I am not the cause of all the problems in your life"
-431,4,"I am sure she didn't mean it like that"
-432,4,"I didn't break the law; I was testing its boundaries"
-433,4,"I didn't procrastinate; I was prioritizing other tasks"
-434,4,"I didn't overreact; I expressed my feelings openly"
-435,4,"I didn't lie; I simply presented alternative facts"
-436,4,"I wasn't avoiding you; I was occupied with other commitments"
-437,4,"I wasn't rude; I was being straightforward"
-438,4,"I wasn't stealing; I was just borrowing without asking"
-439,4,"I wasn't being jealous; I was expressing my feelings"
-440,4,"I wasn't being impatient; I was making sure we didn't waste time"
-441,4,"I wasn't pushing you away; I was giving you room to think"
-442,4,"I wasn't being distant; I was just processing everything"
-443,4,"I wasn't being stubborn; I was standing firm in my beliefs"
-444,4,"I wasn't being confrontational; I was addressing issues directly"
-445,4,"I wasn't refusing to answer; I was giving you space to reflect"
-446,4,"I wasn't being dismissive; I was keeping the conversation concise"
-447,4,"I wasn't being aloof; I was maintaining professionalism"
-448,4,"I wasn't being secretive; I valued my privacy"
-449,4,"I wasn't contradicting myself; I was evolving my opinion"
-450,4,"I wasn't being pessimistic; I was being realistic"
-451,4,"I wasn't covering anything up; I was waiting for the right moment to explain"
-452,4,"I wasn't being defensive; I was clarifying my position"
-453,4,"I wasn't misleading you; I was protecting you from the whole truth"
-454,4,"I wasn't being arrogant; I was confident in my abilities"
-455,4,"I wasn't arguing; I was engaging in a passionate discussion"
-456,4,"I wasn't breaking a promise; I was adapting to the situation"
-457,4,"I wasn't being careless; I was taking calculated risks"
-458,4,"I wasn't being reckless; I embraced spontaneity"
-459,4,"I wasn't being passive; I was choosing my battles wisely"
-460,4,"I wasn't being two-faced; I was adapting to different situations"
-461,4,"I wasn't withholding information; I was waiting until it was necessary"
-462,4,"I wasn't being passive-aggressive; I was subtly expressing myself"
-463,4,"I wasn't being insensitive; I was focusing on facts"
-464,4,"I wasn't being evasive; I was providing broader context"
-465,4,"I wasn't exaggerating; I was making it more engaging"
-466,4,"I wasn't avoiding blame; I was focusing on moving forward"
-467,4,"I wasn't being cynical; I was questioning assumptions"
-468,4,"I wasn't avoiding accountability; I was waiting for the right time to address it"
-469,4,"I wasn't being careless; I was trusting the process"
-470,4,"I wasn't being indecisive; I was considering all options"
-471,4,"I wasn't evading responsibility; I was ensuring fairness for everyone"
-472,4,"I wasn't being selfish; I was practicing self-care"
-473,4,"I wasn't being unfaithful; I sought emotional support"
-474,4,"I wasn't being judgmental; I was offering my perspective"
-475,4,"I wasn't lying; I was protecting your feelings"
-476,4,"I wasn't manipulating; I was helping you see things differently"
-477,4,"I wasn't irresponsible; I was embracing spontaneity"
-478,4,"I wasn't being dismissive; I prioritized other matters"
-479,4,"I wasn't gossiping; I was sharing concerns"
-480,4,"I didn't fail; I discovered a way that doesn't work"
-481,4,"I didn't ignore you; I was giving you space"
-482,4,"I didn't deceive you; I withheld information for your benefit"
-483,4,"I didn't forget; I chose to focus on more pressing matters"
-484,4,"I didn't betray you; I acted in everyone's best interest"
-485,4,"I wasn't cheating; I was using creative problem-solving"
-486,4,"I didn't dismiss your feelings; I was trying to stay logical"
-487,4,"I didn't insult you; I made an observation"
-488,4,"I didn't criticize you; I pointed out areas for improvement"
-489,4,"I didn't overpromise; I set ambitious goals"
-490,4,"I didn't try to control you; I just guided you in the right direction"
-491,4,"I didn't complain; I voiced my concerns"
-492,4,"I wasn't lazy; I was conserving energy"
-493,4,"I didn't manipulate; I influenced the outcome"
-494,4,"I didn't ignore you; I assumed you'd figure it out on your own"
-495,4,"I didn't ignore the rules; I interpreted them differently"
-496,4,"I didn't ignore your advice; I just considered other perspectives too"
-497,4,"I wasn’t lying; I just left out some details"
-498,4,"I didn't break the rules; I just interpreted them differently"
-499,4,"I didn't break my promise; circumstances changed"
-500,4,"I didn't overstep boundaries; I was being proactive"
-501,4,"I wasn't eavesdropping; I was accidentally overhearing"
-502,4,"I didn't criticize; I offered constructive feedback"
-503,4,"I didn't dominate the conversation; I was actively participating"
-504,4,"I didn't contradict myself; I just changed my perspective"
-505,4,"I didn't overindulge; I treated myself"
-506,4,"I didn't dodge the truth; I presented it in a way that was easier to hear"
-507,4,"I didn't lie about it; I just didn't correct your misunderstanding"
-508,4,"I didn't deceive you; I just presented it in a way you'd understand"
-509,4,"I didn't overanalyze; I paid attention to details"
-510,4,"I didn't make a mistake; I had an unexpected result"
-511,4,"I didn't ignore your instructions; I simply took a different approach"
-512,4,"I wasn't nosy; I was being inquisitive"
-513,4,"I didn't neglect you; I assumed you were fine"
-514,4,"I didn't fail to listen; I was formulating my response"
-515,4,"I didn't interrupt; I was adding to the conversation"
-516,4,"I didn't hide anything; I just didn't mention it"
-517,4,"I didn't evade the question; I redirected the focus"
-518,4,"I didn't overcomplicate things; I just explored all the possibilities"
-519,4,"I didn't betray your trust; I made a decision that was best for me"
-520,4,"I didn't neglect my duties; I delegated them"
-521,4,"I didn't twist the facts; I just emphasized the important parts"
-522,4,"I didn't avoid responsibility; I trusted others to handle it"
-523,4,"I didn't overlook your input; I considered it silently"
-524,4,"I didn't act selfishly; I just put myself first this time"
-525,4,"I didn't change the story; I remembered more details later"
-526,4,"I didn't abandon the project; I redirected my focus"
-527,4,"I didn't procrastinate; I waited for the right moment"
-528,4,"I didn't keep secrets; I just didn't share unnecessary details"
-529,4,"I didn't make excuses; I simply explained why things happened the way they did"
-530,4,"This is just a misunderstanding"
-531,4,"I never meant that!"
-532,4,"I didn't mean it like that"
-533,4,"That’s not what I meant"
-534,4,"It’s just a misunderstanding"
-535,5,"I can't believe you're blaming me for this; you're the one who's always causing problems"
-536,5,"How can you say I neglected you when you're the one who ignores my needs?"
-537,5,"I can't believe you're blaming me for your unhappiness; you're the one who's never satisfied"
-538,5,"How dare you say I hurt you; it's your constant complaints that are hurting me"
-539,5,"You're accusing me of being unfaithful? Your constant suspicion is what's driving us apart"
-540,5,"You're blaming me for the argument? You're the one who started it"
-541,5,"You're accusing me of lying? You're the one who's been dishonest all along"
-542,5,"You're saying I don't compromise? You're the one who's always stubborn"
-543,5,"I can't believe you're saying I don't plan for the future; you're the one who's shortsighted"
-544,5,"I can't believe you're saying I don't show empathy; you're the one who's indifferent"
-545,5,"How dare you say I don't show gratitude; you're the one who never acknowledges my efforts"
-546,5,"You're accusing me of being jealous? You're the one who's always suspicious"
-547,5,"I can't believe you're saying I don't make time for you; you're the one who's always too busy"
-548,5,"How dare you say I don't show affection; you're the one who's always pushing me away"
-549,5,"How can you say I don't prioritize us when you're the one who's always distracted?"
-550,5,"You're accusing me of being unfair? You're the one who's always biased"
-551,5,"You're calling me a bad parent? You're the one who's never around for the kids"
-552,5,"I can't believe you're saying I don't care about your family; you're the one who ignores mine"
-553,5,"You're accusing me of being moody? You're the one whose moods change every minute"
-554,5,"I can't believe you're saying I don't make sacrifices; you're the one who's inflexible"
-555,5,"You're calling me lazy? You're the one who never lifts a finger"
-556,5,"I can't believe you're saying I don't encourage you; you're the one who dismisses my support"
-557,5,"You're saying I don't contribute? You're the one who's not pulling your weight"
-558,5,"How dare you say I don't share; you're the one who's possessive"
-559,5,"You're accusing me of being forgetful? You're the one who never remembers anything"
-560,5,"How can you say I don't value you when you're the one who never acknowledges my efforts?"
-561,5,"I can't believe you're saying I don't appreciate you; you're the one who takes me for granted"
-562,5,"How dare you say I don't take responsibility; you're the one who always blames others"
-563,5,"I can't believe you're saying I don't respect your space; you're the one who's always invading mine"
-564,5,"You're calling me a troublemaker? You're the one who's always causing issues"
-565,5,"I can't believe you're saying I don't support your dreams; you're the one who dismisses mine"
-566,5,"How dare you say I don't communicate; you're the one who shuts down every conversation"
-567,5,"I can't believe you're saying I don't compromise; you're the one who's inflexible"
-568,5,"I can't believe you're saying I don't take initiative; your micromanagement stifles me"
-569,5,"You're calling me immature? You're the one who never acts your age"
-570,5,"I can't believe you're saying I don't respect your boundaries; you're the one who invades mine"
-571,5,"How can you say I don't value your input when you're the one who ignores mine?"
-572,5,"You're calling me ungrateful? You're the one who never appreciates anything"
-573,5,"How can you say I don't respect your opinions when you're the one who belittles mine?"
-574,5,"You're blaming me for the distance between us? You're the one who's been distant"
-575,5,"How can you say I don't listen when you're the one who never lets me speak?"
-576,5,"You're accusing me of being manipulative? You're the one who's always scheming"
-577,5,"You're accusing me of being irresponsible? You're the one who never takes things seriously"
-578,5,"How can you say I don't trust you when you're the one who's secretive?"
-579,5,"You're calling me insensitive? You're the one who's always hurting my feelings"
-580,5,"How dare you say I don't contribute; you're the one who wastes our resources"
-581,5,"You're accusing me of being careless? You're the one who's always negligent"
-582,5,"You're calling me manipulative? You're the one trying to control everything"
-583,5,"How dare you accuse me of betrayal; you're the one who's been disloyal"
-584,5,"I can't believe you're saying I disrespected you; you're the one who's always rude"
-585,5,"How can you say I embarrassed you when you're the one who's always making a scene?"
-586,5,"How dare you say I don't care; you're the one who's indifferent to my feelings"
-587,5,"How can you say I mistreated you when you're the one who's been cruel?"
-588,5,"You're saying I cheated? Your lack of trust is what's ruining this relationship"
-589,5,"You're blaming me for the distance? Your lack of interest is what's creating the gap"
-590,5,"How can you say I overreacted when you're the one who's always dramatic?"
-591,5,"You're accusing me of being untrustworthy? Your paranoia is what's breaking us apart"
-592,5,"I can't believe you're blaming me for the debt; you're the one who's always spending"
-593,5,"You're blaming me for the lack of excitement? Your routine stifles spontaneity"
-594,5,"You're accusing me of being controlling? You're the one who's always trying to dominate"
-595,5,"You're accusing me of being unreliable? Your unrealistic expectations set me up to fail"
-596,5,"You're blaming me for our financial issues? Your reckless spending is the real problem"
-597,5,"You're accusing me of being forgetful? Your constant changes make it hard to keep up"
-598,5,"You're blaming me for the chaos? Your disorganization is the root cause"
-599,5,"You're accusing me of being irresponsible? Your micromanagement makes it impossible to act"
-600,5,"I can't believe you're saying I don't respect you; you're the one who's disrespectful"
-601,5,"You're accusing me of being selfish? You're the one who's self-centered"
-602,5,"I can't believe you're saying I abused you; you're the one who's been abusive"
-603,5,"You're blaming me for the lack of intimacy? Your constant criticism is a turn-off"
-604,5,"You're accusing me of being selfish? Your demands leave no room for my needs"
-605,5,"I can't believe you're blaming me for the failure; you're the one who didn't try"
+425,3,Don’t put words in my mouth
+426,3,That’s not how it happened
+427,3,That’s not what happened. You don’t understand what was going on.
+428,3,That’s not the way things are.
+429,3,That’s not how things are.
+430,4,I am not the cause of all the problems in your life
+431,4,I am sure she didn't mean it like that
+432,4,I didn't break the law; I was testing its boundaries
+433,4,I didn't procrastinate; I was prioritizing other tasks
+434,4,I didn't overreact; I expressed my feelings openly
+435,4,I didn't lie; I simply presented alternative facts
+436,4,I wasn't avoiding you; I was occupied with other commitments
+437,4,I wasn't rude; I was being straightforward
+438,4,I wasn't stealing; I was just borrowing without asking
+439,4,I wasn't being jealous; I was expressing my feelings
+440,4,I wasn't being impatient; I was making sure we didn't waste time
+441,4,I wasn't pushing you away; I was giving you room to think
+442,4,I wasn't being distant; I was just processing everything
+443,4,I wasn't being stubborn; I was standing firm in my beliefs
+444,4,I wasn't being confrontational; I was addressing issues directly
+445,4,I wasn't refusing to answer; I was giving you space to reflect
+446,4,I wasn't being dismissive; I was keeping the conversation concise
+447,4,I wasn't being aloof; I was maintaining professionalism
+448,4,I wasn't being secretive; I valued my privacy
+449,4,I wasn't contradicting myself; I was evolving my opinion
+450,4,I wasn't being pessimistic; I was being realistic
+451,4,I wasn't covering anything up; I was waiting for the right moment to explain
+452,4,I wasn't being defensive; I was clarifying my position
+453,4,I wasn't misleading you; I was protecting you from the whole truth
+454,4,I wasn't being arrogant; I was confident in my abilities
+455,4,I wasn't arguing; I was engaging in a passionate discussion
+456,4,I wasn't breaking a promise; I was adapting to the situation
+457,4,I wasn't being careless; I was taking calculated risks
+458,4,I wasn't being reckless; I embraced spontaneity
+459,4,I wasn't being passive; I was choosing my battles wisely
+460,4,I wasn't being two-faced; I was adapting to different situations
+461,4,I wasn't withholding information; I was waiting until it was necessary
+462,4,I wasn't being passive-aggressive; I was subtly expressing myself
+463,4,I wasn't being insensitive; I was focusing on facts
+464,4,I wasn't being evasive; I was providing broader context
+465,4,I wasn't exaggerating; I was making it more engaging
+466,4,I wasn't avoiding blame; I was focusing on moving forward
+467,4,I wasn't being cynical; I was questioning assumptions
+468,4,I wasn't avoiding accountability; I was waiting for the right time to address it
+469,4,I wasn't being careless; I was trusting the process
+470,4,I wasn't being indecisive; I was considering all options
+471,4,I wasn't evading responsibility; I was ensuring fairness for everyone
+472,4,I wasn't being selfish; I was practicing self-care
+473,4,I wasn't being unfaithful; I sought emotional support
+474,4,I wasn't being judgmental; I was offering my perspective
+475,4,I wasn't lying; I was protecting your feelings
+476,4,I wasn't manipulating; I was helping you see things differently
+477,4,I wasn't irresponsible; I was embracing spontaneity
+478,4,I wasn't being dismissive; I prioritized other matters
+479,4,I wasn't gossiping; I was sharing concerns
+480,4,I didn't fail; I discovered a way that doesn't work
+481,4,I didn't ignore you; I was giving you space
+482,4,I didn't deceive you; I withheld information for your benefit
+483,4,I didn't forget; I chose to focus on more pressing matters
+484,4,I didn't betray you; I acted in everyone's best interest
+485,4,I wasn't cheating; I was using creative problem-solving
+486,4,I didn't dismiss your feelings; I was trying to stay logical
+487,4,I didn't insult you; I made an observation
+488,4,I didn't criticize you; I pointed out areas for improvement
+489,4,I didn't overpromise; I set ambitious goals
+490,4,I didn't try to control you; I just guided you in the right direction
+491,4,I didn't complain; I voiced my concerns
+492,4,I wasn't lazy; I was conserving energy
+493,4,I didn't manipulate; I influenced the outcome
+494,4,I didn't ignore you; I assumed you'd figure it out on your own
+495,4,I didn't ignore the rules; I interpreted them differently
+496,4,I didn't ignore your advice; I just considered other perspectives too
+497,4,I wasn’t lying; I just left out some details
+498,4,I didn't break the rules; I just interpreted them differently
+499,4,I didn't break my promise; circumstances changed
+500,4,I didn't overstep boundaries; I was being proactive
+501,4,I wasn't eavesdropping; I was accidentally overhearing
+502,4,I didn't criticize; I offered constructive feedback
+503,4,I didn't dominate the conversation; I was actively participating
+504,4,I didn't contradict myself; I just changed my perspective
+505,4,I didn't overindulge; I treated myself
+506,4,I didn't dodge the truth; I presented it in a way that was easier to hear
+507,4,I didn't lie about it; I just didn't correct your misunderstanding
+508,4,I didn't deceive you; I just presented it in a way you'd understand
+509,4,I didn't overanalyze; I paid attention to details
+510,4,I didn't make a mistake; I had an unexpected result
+511,4,I didn't ignore your instructions; I simply took a different approach
+512,4,I wasn't nosy; I was being inquisitive
+513,4,I didn't neglect you; I assumed you were fine
+514,4,I didn't fail to listen; I was formulating my response
+515,4,I didn't interrupt; I was adding to the conversation
+516,4,I didn't hide anything; I just didn't mention it
+517,4,I didn't evade the question; I redirected the focus
+518,4,I didn't overcomplicate things; I just explored all the possibilities
+519,4,I didn't betray your trust; I made a decision that was best for me
+520,4,I didn't neglect my duties; I delegated them
+521,4,I didn't twist the facts; I just emphasized the important parts
+522,4,I didn't avoid responsibility; I trusted others to handle it
+523,4,I didn't overlook your input; I considered it silently
+524,4,I didn't act selfishly; I just put myself first this time
+525,4,I didn't change the story; I remembered more details later
+526,4,I didn't abandon the project; I redirected my focus
+527,4,I didn't procrastinate; I waited for the right moment
+528,4,I didn't keep secrets; I just didn't share unnecessary details
+529,4,I didn't make excuses; I simply explained why things happened the way they did
+530,4,This is just a misunderstanding
+531,4,I never meant that!
+532,4,I didn't mean it like that
+533,4,That’s not what I meant
+534,4,It’s just a misunderstanding
+535,5,I can't believe you're blaming me for this; you're the one who's always causing problems
+536,5,How can you say I neglected you when you're the one who ignores my needs?
+537,5,I can't believe you're blaming me for your unhappiness; you're the one who's never satisfied
+538,5,How dare you say I hurt you; it's your constant complaints that are hurting me
+539,5,You're accusing me of being unfaithful? Your constant suspicion is what's driving us apart
+540,5,You're blaming me for the argument? You're the one who started it
+541,5,You're accusing me of lying? You're the one who's been dishonest all along
+542,5,You're saying I don't compromise? You're the one who's always stubborn
+543,5,I can't believe you're saying I don't plan for the future; you're the one who's shortsighted
+544,5,I can't believe you're saying I don't show empathy; you're the one who's indifferent
+545,5,How dare you say I don't show gratitude; you're the one who never acknowledges my efforts
+546,5,You're accusing me of being jealous? You're the one who's always suspicious
+547,5,I can't believe you're saying I don't make time for you; you're the one who's always too busy
+548,5,How dare you say I don't show affection; you're the one who's always pushing me away
+549,5,How can you say I don't prioritize us when you're the one who's always distracted?
+550,5,You're accusing me of being unfair? You're the one who's always biased
+551,5,You're calling me a bad parent? You're the one who's never around for the kids
+552,5,I can't believe you're saying I don't care about your family; you're the one who ignores mine
+553,5,You're accusing me of being moody? You're the one whose moods change every minute
+554,5,I can't believe you're saying I don't make sacrifices; you're the one who's inflexible
+555,5,You're calling me lazy? You're the one who never lifts a finger
+556,5,I can't believe you're saying I don't encourage you; you're the one who dismisses my support
+557,5,You're saying I don't contribute? You're the one who's not pulling your weight
+558,5,How dare you say I don't share; you're the one who's possessive
+559,5,You're accusing me of being forgetful? You're the one who never remembers anything
+560,5,How can you say I don't value you when you're the one who never acknowledges my efforts?
+561,5,I can't believe you're saying I don't appreciate you; you're the one who takes me for granted
+562,5,How dare you say I don't take responsibility; you're the one who always blames others
+563,5,I can't believe you're saying I don't respect your space; you're the one who's always invading mine
+564,5,You're calling me a troublemaker? You're the one who's always causing issues
+565,5,I can't believe you're saying I don't support your dreams; you're the one who dismisses mine
+566,5,How dare you say I don't communicate; you're the one who shuts down every conversation
+567,5,I can't believe you're saying I don't compromise; you're the one who's inflexible
+568,5,I can't believe you're saying I don't take initiative; your micromanagement stifles me
+569,5,You're calling me immature? You're the one who never acts your age
+570,5,I can't believe you're saying I don't respect your boundaries; you're the one who invades mine
+571,5,How can you say I don't value your input when you're the one who ignores mine?
+572,5,You're calling me ungrateful? You're the one who never appreciates anything
+573,5,How can you say I don't respect your opinions when you're the one who belittles mine?
+574,5,You're blaming me for the distance between us? You're the one who's been distant
+575,5,How can you say I don't listen when you're the one who never lets me speak?
+576,5,You're accusing me of being manipulative? You're the one who's always scheming
+577,5,You're accusing me of being irresponsible? You're the one who never takes things seriously
+578,5,How can you say I don't trust you when you're the one who's secretive?
+579,5,You're calling me insensitive? You're the one who's always hurting my feelings
+580,5,How dare you say I don't contribute; you're the one who wastes our resources
+581,5,You're accusing me of being careless? You're the one who's always negligent
+582,5,You're calling me manipulative? You're the one trying to control everything
+583,5,How dare you accuse me of betrayal; you're the one who's been disloyal
+584,5,I can't believe you're saying I disrespected you; you're the one who's always rude
+585,5,How can you say I embarrassed you when you're the one who's always making a scene?
+586,5,How dare you say I don't care; you're the one who's indifferent to my feelings
+587,5,How can you say I mistreated you when you're the one who's been cruel?
+588,5,You're saying I cheated? Your lack of trust is what's ruining this relationship
+589,5,You're blaming me for the distance? Your lack of interest is what's creating the gap
+590,5,How can you say I overreacted when you're the one who's always dramatic?
+591,5,You're accusing me of being untrustworthy? Your paranoia is what's breaking us apart
+592,5,I can't believe you're blaming me for the debt; you're the one who's always spending
+593,5,You're blaming me for the lack of excitement? Your routine stifles spontaneity
+594,5,You're accusing me of being controlling? You're the one who's always trying to dominate
+595,5,You're accusing me of being unreliable? Your unrealistic expectations set me up to fail
+596,5,You're blaming me for our financial issues? Your reckless spending is the real problem
+597,5,You're accusing me of being forgetful? Your constant changes make it hard to keep up
+598,5,You're blaming me for the chaos? Your disorganization is the root cause
+599,5,You're accusing me of being irresponsible? Your micromanagement makes it impossible to act
+600,5,I can't believe you're saying I don't respect you; you're the one who's disrespectful
+601,5,You're accusing me of being selfish? You're the one who's self-centered
+602,5,I can't believe you're saying I abused you; you're the one who's been abusive
+603,5,You're blaming me for the lack of intimacy? Your constant criticism is a turn-off
+604,5,You're accusing me of being selfish? Your demands leave no room for my needs
+605,5,I can't believe you're blaming me for the failure; you're the one who didn't try
 606,5,"I never did that to you! In fact, YOU'RE hurting ME for even suggesting that!"
-607,5,"You're blaming me for the lack of trust? Your past actions are the reason"
-608,5,"You're accusing me of being inattentive? Your constant nagging makes me tune out"
-609,5,"I can't believe you're saying I don't trust you; you're the one who's untrustworthy"
-610,5,"I can't believe you're blaming me for the mess; you're the one who's always untidy"
-611,5,"You're blaming me for the lack of fun? Your seriousness kills the mood"
-612,5,"You're saying I don't listen? You're the one who never pays attention"
-613,5,"You're blaming me for the tension? Your overreactions are the real issue"
-614,5,"How dare you say I don't love you; you're the one who's been distant"
-615,5,"I can't believe you're saying I don't support you; you're the one who's never there for me"
-616,5,"You're blaming me for the lack of progress? Your negativity is what's holding us back"
-617,5,"How can you say I don't prioritize us when you're the one who's always busy?"
-618,5,"You're accusing me of being inattentive? Your constant complaints make me disengage"
-619,5,"You're accusing me of being judgmental? Your actions invite criticism"
-620,5,"How dare you say I undermined you; you're the one who's always doubting me"
-621,5,"You're accusing me of being unkind? Your harsh words provoke my reactions"
-622,5,"How can you accuse me of being negative when you're the one who's always pessimistic?"
-623,5,"You're accusing me of being distant? Your constant neediness is suffocating"
-624,5,"You're blaming me for the misunderstandings? Your poor communication is the cause"
-625,5,"You're blaming me for the lack of connection? Your emotional walls are impenetrable"
-626,5,"I can't believe you're accusing me of being distant; you're the one who's been aloof"
-627,5,"You're accusing me of being cold? It's your emotional outbursts that push me away"
-628,5,"You're blaming me for the arguments? Your sensitivity turns everything into a fight"
-629,5,"You're accusing me of being inattentive? Your constant negativity makes me withdraw"
-630,6,"I thought I was doing the right thing"
-631,6,"I tried to help you"
-632,6,"I yelled at you to make you understand the seriousness of the situation"
-633,6,"I monitored your messages to ensure your safety"
-634,6,"I ignored your feelings to toughen you up"
-635,6,"I lied to protect you from the harsh truth"
-636,6,"I restricted your movements to keep you out of trouble"
-637,6,"I withheld affection to teach you a lesson"
-638,6,"I had to discipline you strictly; it's the only way you'll learn"
-639,6,"I belittled your emotions to make you stronger"
-640,6,"I kept secrets from you to shield you from worry"
-641,6,"I limited your opportunities to keep you from getting hurt"
-642,6,"I denied your choices to prevent you from making errors"
-643,6,"I imposed my beliefs to lead you on the correct path"
-644,6,"I imposed my standards to uphold our family's honor"
-645,6,"I set high expectations to motivate you"
-646,6,"I dismissed your concerns to prevent you from overthinking"
-647,6,"I dismissed your dreams to keep you realistic"
-648,6,"I controlled your spending to secure our financial future"
-649,6,"I imposed restrictions to build your character"
-650,6,"I enforced my rules to prepare you for the real world"
-651,6,"I controlled your social interactions to maintain our family's reputation"
-652,6,"I restricted your hobbies to keep you focused on important matters"
-653,6,"I enforced strict curfews to keep you safe"
-654,6,"I belittled your opinions to prevent you from making mistakes"
-655,6,"I enforced my decisions to maintain order in the household"
-656,6,"I denied your requests to teach you patience"
-657,6,"I criticized your appearance to help you fit in"
-658,6,"I forced you to follow traditions to preserve our culture"
-659,6,"I ignored your desires to keep you grounded"
-660,6,"I dismissed your passions to guide you towards practicality"
-661,6,"I denied your opinions to prevent confusion"
-662,6,"I controlled your schedule to maximize your productivity"
-663,6,"I criticized your friends to steer you towards better company"
-664,6,"I belittled your efforts to push you to work harder"
-665,6,"I enforced conformity to protect you from judgment"
-666,6,"I controlled your relationships to ensure you're with the right people"
-667,6,"I dismissed your ideas to prevent you from going astray"
-668,6,"I dismissed your preferences to align with societal norms"
-669,6,"I guilt-tripped you to make you realize your mistakes"
-670,6,"I controlled your environment to eliminate distractions"
-671,6,"I dictated your choices to ensure you don't regret them later"
-672,6,"I manipulated situations to guide you in the right direction"
-673,6,"I controlled your diet to ensure your health"
-674,6,"I discouraged your ambitions to protect you from failure"
-675,6,"I had to embarrass you in front of others to keep you humble"
-676,6,"I silenced your dissent to maintain unity"
-677,6,"I isolated you from your friends because they were a bad influence"
-678,6,"I dismissed your achievements to keep you humble"
-679,6,"I criticized you to motivate you to improve"
-680,6,"I undermined your confidence so you'd rely on me"
-681,6,"I controlled your wardrobe to help you dress appropriately"
-682,6,"I imposed strict rules to instill discipline"
-683,6,"I took control of your finances because you're not good with money"
-684,6,"I denied your requests to teach you humility"
-685,6,"I punished you harshly to deter future misbehavior"
-686,6,"I withheld support to encourage your independence"
-687,6,"I made decisions for you because I know what's best"
-688,6,"I forced you to quit your job so you could focus on the family"
-689,6,"I compared you to others to inspire you to do better"
-690,6,"I dismissed your fears to make you courageous"
-691,6,"I invaded your privacy to ensure you're not hiding anything"
-692,6,"I criticized your work to push you towards excellence"
-693,6,"I dismissed your complaints to prevent unnecessary conflict"
-694,6,"I did fat-shame you—but it was for your own good"
-695,6,"I was just trying to help"
-696,6,"I was only making you learn"
-697,6,"I was trying to help you"
-698,6,"It’s for your own good"
-699,6,"So what if I threatened or blackmailed you? I never followed through"
+607,5,You're blaming me for the lack of trust? Your past actions are the reason
+608,5,You're accusing me of being inattentive? Your constant nagging makes me tune out
+609,5,I can't believe you're saying I don't trust you; you're the one who's untrustworthy
+610,5,I can't believe you're blaming me for the mess; you're the one who's always untidy
+611,5,You're blaming me for the lack of fun? Your seriousness kills the mood
+612,5,You're saying I don't listen? You're the one who never pays attention
+613,5,You're blaming me for the tension? Your overreactions are the real issue
+614,5,How dare you say I don't love you; you're the one who's been distant
+615,5,I can't believe you're saying I don't support you; you're the one who's never there for me
+616,5,You're blaming me for the lack of progress? Your negativity is what's holding us back
+617,5,How can you say I don't prioritize us when you're the one who's always busy?
+618,5,You're accusing me of being inattentive? Your constant complaints make me disengage
+619,5,You're accusing me of being judgmental? Your actions invite criticism
+620,5,How dare you say I undermined you; you're the one who's always doubting me
+621,5,You're accusing me of being unkind? Your harsh words provoke my reactions
+622,5,How can you accuse me of being negative when you're the one who's always pessimistic?
+623,5,You're accusing me of being distant? Your constant neediness is suffocating
+624,5,You're blaming me for the misunderstandings? Your poor communication is the cause
+625,5,You're blaming me for the lack of connection? Your emotional walls are impenetrable
+626,5,I can't believe you're accusing me of being distant; you're the one who's been aloof
+627,5,You're accusing me of being cold? It's your emotional outbursts that push me away
+628,5,You're blaming me for the arguments? Your sensitivity turns everything into a fight
+629,5,You're accusing me of being inattentive? Your constant negativity makes me withdraw
+630,6,I thought I was doing the right thing
+631,6,I tried to help you
+632,6,I yelled at you to make you understand the seriousness of the situation
+633,6,I monitored your messages to ensure your safety
+634,6,I ignored your feelings to toughen you up
+635,6,I lied to protect you from the harsh truth
+636,6,I restricted your movements to keep you out of trouble
+637,6,I withheld affection to teach you a lesson
+638,6,I had to discipline you strictly; it's the only way you'll learn
+639,6,I belittled your emotions to make you stronger
+640,6,I kept secrets from you to shield you from worry
+641,6,I limited your opportunities to keep you from getting hurt
+642,6,I denied your choices to prevent you from making errors
+643,6,I imposed my beliefs to lead you on the correct path
+644,6,I imposed my standards to uphold our family's honor
+645,6,I set high expectations to motivate you
+646,6,I dismissed your concerns to prevent you from overthinking
+647,6,I dismissed your dreams to keep you realistic
+648,6,I controlled your spending to secure our financial future
+649,6,I imposed restrictions to build your character
+650,6,I enforced my rules to prepare you for the real world
+651,6,I controlled your social interactions to maintain our family's reputation
+652,6,I restricted your hobbies to keep you focused on important matters
+653,6,I enforced strict curfews to keep you safe
+654,6,I belittled your opinions to prevent you from making mistakes
+655,6,I enforced my decisions to maintain order in the household
+656,6,I denied your requests to teach you patience
+657,6,I criticized your appearance to help you fit in
+658,6,I forced you to follow traditions to preserve our culture
+659,6,I ignored your desires to keep you grounded
+660,6,I dismissed your passions to guide you towards practicality
+661,6,I denied your opinions to prevent confusion
+662,6,I controlled your schedule to maximize your productivity
+663,6,I criticized your friends to steer you towards better company
+664,6,I belittled your efforts to push you to work harder
+665,6,I enforced conformity to protect you from judgment
+666,6,I controlled your relationships to ensure you're with the right people
+667,6,I dismissed your ideas to prevent you from going astray
+668,6,I dismissed your preferences to align with societal norms
+669,6,I guilt-tripped you to make you realize your mistakes
+670,6,I controlled your environment to eliminate distractions
+671,6,I dictated your choices to ensure you don't regret them later
+672,6,I manipulated situations to guide you in the right direction
+673,6,I controlled your diet to ensure your health
+674,6,I discouraged your ambitions to protect you from failure
+675,6,I had to embarrass you in front of others to keep you humble
+676,6,I silenced your dissent to maintain unity
+677,6,I isolated you from your friends because they were a bad influence
+678,6,I dismissed your achievements to keep you humble
+679,6,I criticized you to motivate you to improve
+680,6,I undermined your confidence so you'd rely on me
+681,6,I controlled your wardrobe to help you dress appropriately
+682,6,I imposed strict rules to instill discipline
+683,6,I took control of your finances because you're not good with money
+684,6,I denied your requests to teach you humility
+685,6,I punished you harshly to deter future misbehavior
+686,6,I withheld support to encourage your independence
+687,6,I made decisions for you because I know what's best
+688,6,I forced you to quit your job so you could focus on the family
+689,6,I compared you to others to inspire you to do better
+690,6,I dismissed your fears to make you courageous
+691,6,I invaded your privacy to ensure you're not hiding anything
+692,6,I criticized your work to push you towards excellence
+693,6,I dismissed your complaints to prevent unnecessary conflict
+694,6,I did fat-shame you—but it was for your own good
+695,6,I was just trying to help
+696,6,I was only making you learn
+697,6,I was trying to help you
+698,6,It’s for your own good
+699,6,So what if I threatened or blackmailed you? I never followed through
 700,7,"And if I did, I didn't mean it."
 701,7,"Remember, you were the one who suggested we try this."
-702,7,"We both agreed to push boundaries; this was part of it."
-703,7,"We both wanted to explore this; you can't blame me alone."
-704,7,"We discussed this beforehand; you knew what was coming."
+702,7,We both agreed to push boundaries; this was part of it.
+703,7,We both wanted to explore this; you can't blame me alone.
+704,7,We discussed this beforehand; you knew what was coming.
 705,7,"We had a safe word, and you didn't use it."
-706,7,"We set the rules together; I'm just following them."
-707,7,"You agreed to this lifestyle; don't act surprised now."
-708,7,"You can’t accuse me when you were a willing participant."
-709,7,"You can’t accuse me when you were fully involved."
-710,7,"You can’t act innocent now; you were a participant."
-711,7,"You can’t act like this was forced; you consented."
-712,7,"You can’t act like you didn’t agree; we discussed it."
-713,7,"You can’t act surprised; we agreed on this together."
-714,7,"You can’t blame me for something you agreed to."
-715,7,"You can’t claim ignorance now; we talked about this."
-716,7,"You can’t claim victimhood when you were consenting."
-717,7,"You can’t deny your consent; we both agreed."
-718,7,"You can’t deny your involvement; you were fully aware."
-719,7,"You can’t deny your role in this; you consented."
-720,7,"You can’t feign innocence now; you consented."
-721,7,"You can’t play the victim card when you were involved."
-722,7,"You can’t pretend you didn’t know; we talked about this."
-723,7,"You can’t rewrite history; you were on board."
-724,7,"You can’t shift the blame when you were on board."
-725,7,"You didn’t object at the time; why complain now?"
-726,7,"You encouraged me—now you're accusing me?"
-727,7,"You gave me the green light; don’t pretend otherwise."
-728,7,"You knew exactly what you were getting into."
-729,7,"You knew my preferences from the start; this shouldn't be a shock."
-730,7,"You participated willingly; don’t act like a victim."
-731,7,"You signed the contract; you can’t back out now."
-732,7,"You were a consenting adult; take responsibility."
-733,7,"You were a willing participant; own up to it."
-734,7,"You were a willing partner; don’t act like a victim now."
-735,7,"You were an active participant; this was mutual."
-736,7,"You were an equal participant; don’t shift the blame."
-737,7,"You were consenting; don’t act surprised now."
-738,7,"You were enthusiastic about this before—what’s changed?"
-739,7,"You were fully aware of the risks involved."
-740,7,"You were fully aware of what we were doing."
-741,7,"You were fully aware; don’t play dumb now."
-742,7,"You were fully consenting; don’t twist the facts."
-743,7,"You were fully informed; don’t pretend otherwise."
-744,7,"You were on board from the start; don’t act differently now."
-745,7,"You were sober and consenting; don’t twist the narrative."
-746,7,"You were the one who agreed; don’t blame me."
-747,7,"You were the one who brought this idea to the table."
-748,7,"You were the one who consented; don’t accuse me now."
-749,7,"You were the one who encouraged this; don’t turn it around."
-750,7,"You were the one who initiated this; don’t blame me now."
-751,7,"You were the one who proposed this; don’t turn it on me."
-752,7,"You were the one who suggested this; don’t turn it on me."
-753,7,"You were the one who wanted this; don’t shift the blame."
+706,7,We set the rules together; I'm just following them.
+707,7,You agreed to this lifestyle; don't act surprised now.
+708,7,You can’t accuse me when you were a willing participant.
+709,7,You can’t accuse me when you were fully involved.
+710,7,You can’t act innocent now; you were a participant.
+711,7,You can’t act like this was forced; you consented.
+712,7,You can’t act like you didn’t agree; we discussed it.
+713,7,You can’t act surprised; we agreed on this together.
+714,7,You can’t blame me for something you agreed to.
+715,7,You can’t claim ignorance now; we talked about this.
+716,7,You can’t claim victimhood when you were consenting.
+717,7,You can’t deny your consent; we both agreed.
+718,7,You can’t deny your involvement; you were fully aware.
+719,7,You can’t deny your role in this; you consented.
+720,7,You can’t feign innocence now; you consented.
+721,7,You can’t play the victim card when you were involved.
+722,7,You can’t pretend you didn’t know; we talked about this.
+723,7,You can’t rewrite history; you were on board.
+724,7,You can’t shift the blame when you were on board.
+725,7,You didn’t object at the time; why complain now?
+726,7,You encouraged me—now you're accusing me?
+727,7,You gave me the green light; don’t pretend otherwise.
+728,7,You knew exactly what you were getting into.
+729,7,You knew my preferences from the start; this shouldn't be a shock.
+730,7,You participated willingly; don’t act like a victim.
+731,7,You signed the contract; you can’t back out now.
+732,7,You were a consenting adult; take responsibility.
+733,7,You were a willing participant; own up to it.
+734,7,You were a willing partner; don’t act like a victim now.
+735,7,You were an active participant; this was mutual.
+736,7,You were an equal participant; don’t shift the blame.
+737,7,You were consenting; don’t act surprised now.
+738,7,You were enthusiastic about this before—what’s changed?
+739,7,You were fully aware of the risks involved.
+740,7,You were fully aware of what we were doing.
+741,7,You were fully aware; don’t play dumb now.
+742,7,You were fully consenting; don’t twist the facts.
+743,7,You were fully informed; don’t pretend otherwise.
+744,7,You were on board from the start; don’t act differently now.
+745,7,You were sober and consenting; don’t twist the narrative.
+746,7,You were the one who agreed; don’t blame me.
+747,7,You were the one who brought this idea to the table.
+748,7,You were the one who consented; don’t accuse me now.
+749,7,You were the one who encouraged this; don’t turn it around.
+750,7,You were the one who initiated this; don’t blame me now.
+751,7,You were the one who proposed this; don’t turn it on me.
+752,7,You were the one who suggested this; don’t turn it on me.
+753,7,You were the one who wanted this; don’t shift the blame.
