@@ -1,5 +1,6 @@
 from enums import BlameType, ComparativeJustificationType, DenialType, DownplayingType, EmotionalConnectionType, \
     EmotionalLeverageType, ExpectationType, InvalidationType, MemoryDistortionType, PowerImbalanceType, ThreatType
+from enums.NoneType import NoneType
 
 ELEMENT_PATHS = {
     BlameType: "blame",
@@ -12,7 +13,8 @@ ELEMENT_PATHS = {
     InvalidationType: "invalidation",
     MemoryDistortionType: "memory_distortion",
     PowerImbalanceType: "power_imbalance",
-    ThreatType: "threat"
+    ThreatType: "threat",
+    NoneType: "none"
 }
 
 RAW_PATH = "./data/element/raw/"
